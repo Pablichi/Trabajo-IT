@@ -21,6 +21,9 @@
         <action name="listarValoraciones" class="Controller.listarValoracionesAction">
             <result name="success">/adminValoracionesIndex.jsp</result>
         </action>
+        <action name="listarPaquetes" class="Controller.listarPaquetesAction">
+            <result name="success">/adminPaqueteIndex.jsp</result>
+        </action>
         
         <action name="listarProveedores" class="Controller.listarProveedorAction">
             <result name="success">/proveedores.jsp</result>

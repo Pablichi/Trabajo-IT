@@ -42,8 +42,10 @@
             <s:form action="listarValoraciones">
                 <s:submit key="ver valoraciones" />
             </s:form>
-        </div>    
-            
+        </div>  
+            <s:form action="listarPaquetes">
+                <s:submit key="ver paquetes" />
+            </s:form>
         </div>
     </body>
 </html>
