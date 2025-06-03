@@ -31,5 +31,12 @@
             </s:iterator>
         </table>
         </div>
+        
+        <div>
+            <s:form action="listarPagos">
+                <s:submit key="ver pagos" />
+            </s:form>
+        </div>    
+        
     </body>
 </html>

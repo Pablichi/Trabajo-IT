@@ -17,15 +17,15 @@
             <h1><s:text name="tituloAdminDestinos"/></h1>
         </header>
 
-        <h2><s:text name="listaPromociones"/></h2>
+        <h2><s:text name="listaPagos"/></h2>
         <div class="container">
       
         <table>
-            <s:iterator value="#session.listaPromociones" var="promocion">  
+            <s:iterator value="#session.listaPagos" var="pago">  
                 
                 <tr>
                     <td>
-                        <s:property value="#promocion.nombrePromocion"/>
+                        <s:property value="#pago.metodoPago"/>
                     </td>                     
                 </tr>
             </s:iterator>
