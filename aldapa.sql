@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-05-2025 a las 11:45:51
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 04-06-2025 a las 01:21:42
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `aldapa`
 --
-CREATE DATABASE IF NOT EXISTS `aldapa` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `aldapa`;
 
 -- --------------------------------------------------------
 
@@ -129,6 +127,15 @@ CREATE TABLE `pago` (
   `id_reserva` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Volcado de datos para la tabla `pago`
+--
+
+INSERT INTO `pago` (`id`, `fecha_pago`, `total`, `metodo_pago`, `estado`, `id_reserva`) VALUES
+(0, '0000-00-00', 0, '', '', NULL),
+(1, '2025-06-04', 450, 'paypal', 'pagado', NULL),
+(2, '2025-06-02', 450, 'paypal', 'pagado', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -172,6 +179,14 @@ CREATE TABLE `promocion` (
   `descripcion` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `id_paquete` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Volcado de datos para la tabla `promocion`
+--
+
+INSERT INTO `promocion` (`id`, `nombre_promocion`, `tipo_descuento`, `valor_descuento`, `fecha_inicio`, `fecha_finalizacion`, `descripcion`, `id_paquete`) VALUES
+(0, 'black friday', 'porcentaje', 50, '2025-11-28', '2025-11-30', 'durante el ultimo fin de semana de noviembre se activarar un descuento del 50% con motivo del black ', 1),
+(2, 'descuento nuevos viajeros', 'valor fijo', 10, '2025-01-01', '2025-12-31', 'descuento correspondiente a nuevos usuarios', NULL);
 
 -- --------------------------------------------------------
 
@@ -227,6 +242,13 @@ CREATE TABLE `valoracion` (
   `id_cliente` int(11) DEFAULT NULL,
   `id_paquete` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Volcado de datos para la tabla `valoracion`
+--
+
+INSERT INTO `valoracion` (`id`, `puntuacion`, `comentario`, `fecha_publicacion`, `id_cliente`, `id_paquete`) VALUES
+(1, 7, 'muy bonito todo', '2025-05-05', 1, 2);
 
 --
 -- Índices para tablas volcadas
