@@ -17,27 +17,19 @@
             <h1><s:text name="tituloAdminDestinos"/></h1>
         </header>
 
-        <h2><s:text name="listaProveedores"/></h2>
+        <h2><s:text name="listaPromociones"/></h2>
         <div class="container">
       
         <table>
-            <s:iterator value="#session.listaProveedores" var="proveedor">  
+            <s:iterator value="#session.listaPromociones" var="promocion">  
                 
                 <tr>
                     <td>
-                        <s:property value="#proveedor.nombreEmpresa"/>
+                        <s:property value="#promocion.nombrePromocion"/>
                     </td>                     
-    
                 </tr>
             </s:iterator>
         </table>
         </div>
-        
-        <div>
-            <s:form action="listarPromociones">
-                <s:submit key="ver promociones" />
-            </s:form>
-        </div>    
-        
     </body>
 </html>

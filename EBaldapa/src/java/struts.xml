@@ -25,6 +25,10 @@
         <action name="listarProveedores" class="Controller.listarProveedorAction">
             <result name="success">/proveedores.jsp</result>
         </action>
+        
+        <action name="listarPromociones" class="Controller.listarPromocionesAction">
+            <result name="success">/promociones.jsp</result>
+        </action>
   
     </package>
     

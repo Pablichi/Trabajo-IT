@@ -32,5 +32,12 @@
             </s:iterator>
         </table>
         </div>
+        
+        <div>
+            <s:form action="listarPromociones">
+                <s:submit key="ver promociones" />
+            </s:form>
+        </div>    
+        
     </body>
 </html>
