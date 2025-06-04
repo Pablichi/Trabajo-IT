@@ -36,6 +36,10 @@
         <action name="listarPagos" class="Controller.listarPagosAction">
             <result name="success">/pagos.jsp</result>
         </action>
+        
+        <action name="listarReservas" class="Controller.listarReservasAction">
+            <result name="success">/adminReservaIndex.jsp</result>
+        </action>
   
     </package>
     
