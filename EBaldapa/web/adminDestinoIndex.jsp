@@ -28,12 +28,13 @@
       
         <table>
             <s:iterator value="#session.listaDestinos" var="destino">  
-                
-                <tr>
+                <tr>                  
                     <td>
-                        <s:property value="#destino.nombre"/>
-                    </td>                     
-    
+                        <s:a action="detalleDestino">
+                            <s:param name="idDestino" value="%{#destino.id}" />
+                            <s:property value="#destino.nombre" />
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>

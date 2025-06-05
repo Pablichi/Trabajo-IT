@@ -18,6 +18,14 @@
     
     <package name="acciones" extends="struts-default">
         
+        <action name="detalleDestino" class="Controller.detalleDestinoAction">
+            <result name="success">/detalleDestino.jsp</result>
+        </action>
+        
+        <action name="eliminarDestino" class="Controller.eliminarDestinoAction">
+            <result name="success">/adminDestinoIndex.jsp</result>
+        </action>
+        
         <action name="listarValoraciones" class="Controller.listarValoracionesAction">
             <result name="success">/adminValoracionesIndex.jsp</result>
         </action>
