@@ -72,6 +72,10 @@
         <action name="eliminarReserva" class="Controller.eliminarReservaAction">
             <result name="success">/adminReservaIndex.jsp</result>
         </action>
+        
+        <action name="detallePromocion" class="Controller.detallePromocionAction">
+            <result name="success">/detallePromocion.jsp</result>
+        </action>
     </package>
     
       <!--      <action name="anadirDestino" class="Controller.anadirDestinoAction">

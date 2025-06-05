@@ -25,7 +25,10 @@
                 
                 <tr>
                     <td>
-                        <s:property value="#promocion.nombrePromocion"/>
+                        <s:a action="detallePromocion">
+                            <s:param name="idPromocion" value="%{#promocion.id}" />
+                            <s:property value="#promocion.nombrePromocion" />
+                        </s:a>
                     </td>                     
                 </tr>
             </s:iterator>
