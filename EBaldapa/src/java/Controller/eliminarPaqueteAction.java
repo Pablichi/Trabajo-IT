@@ -20,14 +20,14 @@ import modelo.PaqueteTuristico;
  */
 public class eliminarPaqueteAction extends ActionSupport {
     
-    private int paqueteId;
+    private int idPaquete;
 
-    public int getId() {
-        return paqueteId;
+    public int getIdPaquete() {
+        return idPaquete;
     }
 
-    public void setId(int paqueteId) {
-        this.paqueteId = paqueteId;
+    public void setIdPaquete(int paqueteId) {
+        this.idPaquete = idPaquete;
     }
     
     public eliminarPaqueteAction() {
@@ -35,7 +35,7 @@ public class eliminarPaqueteAction extends ActionSupport {
     
     public String execute() throws Exception {
         PaqueteTuristicoWS cliente = new PaqueteTuristicoWS();
-        cliente.remove(String.valueOf(this.getId()));
+        cliente.remove(String.valueOf(this.getIdPaquete()));
 
         GenericType<List<PaqueteTuristico>> genericType2 = new GenericType<List<PaqueteTuristico>>() {
         };

@@ -22,11 +22,11 @@
         <p>Cliente: <s:property value="%{reserva.idCliente.nombre}"/></p>
         <p>Paquete: <s:property value="%{reserva.idPaquete.titulo}"/></p>
 
-        <%--
+        
         <s:form action="eliminarReserva">
             <s:param name="idReserva" value="%{#reserva.id}" />
             <s:submit key="Eliminar reserva" />
         </s:form>   
-        --%>
+        
     </body>
 </html>
