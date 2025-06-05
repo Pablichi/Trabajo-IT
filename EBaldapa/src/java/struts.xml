@@ -40,6 +40,10 @@
         <action name="listarReservas" class="Controller.listarReservasAction">
             <result name="success">/adminReservaIndex.jsp</result>
         </action>
+        
+        <action name="detallePaquete" class="Controller.detallePaqueteAction">
+            <result name="success">/detallePaquete.jsp</result>
+        </action>
   
     </package>
     

@@ -15,29 +15,29 @@
     <body>
         <header>
             <h1><s:text name="adminPaquetes">Paquetes Turísticos</s:text></h1>
-        </header>
-        
-        <h2><s:text name="listaPaquetes">Lista de Paquetes Turísticos</s:text></h2>
+            </header>
+
+            <h2><s:text name="listaPaquetes">Lista de Paquetes Turísticos</s:text></h2>
             <table>
             <s:iterator value="#session.listaPaquetes" var="paquete">
                 <tr>                  
-                    <td><%--
-                        <s:url var="paquete" action="detallePaqueteAction">
-                            <s:param name="nombrePaquete" value="%{#paquete.titulo}" />
-                        </s:url>
-                        --%>
-                        <s:property value="#paquete.titulo"/>
+                    <td>
+                        <s:a action="detallePaquete">
+                            <s:param name="idPaquete" value="%{#paquete.id}" />
+                            <s:property value="#paquete.titulo" />
+                        </s:a>
+                      
                     </td>
                 </tr>
             </s:iterator>
-            </table>
+        </table>
         <s:form action="nuevoPaqueteAction">
             <s:submit value="Añadir nuevo paquete" />
         </s:form>
-            
-            
+
+
         <s:form action="listarReservas">
-                <s:submit key="ver reservas" />
+            <s:submit key="ver reservas" />
         </s:form>    
     </body>
 </html>

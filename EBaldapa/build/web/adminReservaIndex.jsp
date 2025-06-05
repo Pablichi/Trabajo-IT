@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,11 +21,7 @@
             <table>
             <s:iterator value="#session.listaReservas" var="reserva">
                 <tr>                  
-                    <td><%--
-                        <s:url var="paquete" action="detallePaqueteAction">
-                            <s:param name="nombrePaquete" value="%{#paquete.titulo}" />
-                        </s:url>
-                        --%>
+                    <td>
                         <s:property value="#reserva.id"/>
                     </td>
                 </tr>
