@@ -40,7 +40,7 @@ public class detallePaqueteAction extends ActionSupport {
         data = (PaqueteTuristico) cliente.find_XML(genericType, Integer.toString(idPaquete));     
          
         paquete = data;
-        
+       
         return SUCCESS;
     }
 

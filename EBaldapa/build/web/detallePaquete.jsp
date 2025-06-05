@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Detalle del paquete Turístico #<s.property value="%{paquete.id}"/>: <s:property value="paquete.titulo"/></h1>
+        <h1>Detalle del paquete Turístico #<s:property value="paquete.id"/>: <s:property value="paquete.titulo"/></h1>
 
         <p>Descripcion: <s:property value="%{paquete.descripcion}"/></p>
         <p>Fecha de Salida: <s:property value="%{paquete.fechaSalida}"/></p>
@@ -22,6 +22,11 @@
         <p>Servicios: <s:property value="%{paquete.serviciosIncluidos}"/></p>
         <p>Destino: <s:property value="%{paquete.idDestino.nombre}"/></p>
         <p>Proveedor: <s:property value="%{paquete.idProveedor.nombreEmpresa}"/></p>
+        
+        <s:form action="eliminarPaquete">
+            <s:param name="idPaquete" value="%{#paquete.id}" />
+            <s:submit key="Eliminar paquete" />
+        </s:form>   
 
     </body>
 </html>

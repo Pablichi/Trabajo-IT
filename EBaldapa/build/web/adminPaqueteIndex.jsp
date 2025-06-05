@@ -26,7 +26,6 @@
                             <s:param name="idPaquete" value="%{#paquete.id}" />
                             <s:property value="#paquete.titulo" />
                         </s:a>
-                      
                     </td>
                 </tr>
             </s:iterator>

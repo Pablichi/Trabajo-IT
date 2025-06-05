@@ -44,7 +44,10 @@
         <action name="detallePaquete" class="Controller.detallePaqueteAction">
             <result name="success">/detallePaquete.jsp</result>
         </action>
-  
+        
+        <action name="eliminarPaquete" class="Controller.eliminarPaqueteAction">
+            <result name="success">/adminPaqueteIndex.jsp</result>
+        </action>
     </package>
     
       <!--      <action name="anadirDestino" class="Controller.anadirDestinoAction">
