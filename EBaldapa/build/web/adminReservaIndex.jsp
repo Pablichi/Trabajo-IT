@@ -22,7 +22,10 @@
             <s:iterator value="#session.listaReservas" var="reserva">
                 <tr>                  
                     <td>
-                        <s:property value="#reserva.id"/>
+                        <s:a action="detalleReserva">
+                            <s:param name="idReserva" value="%{#reserva.id}" />
+                            <s:property value="#reserva.id" />
+                        </s:a>
                     </td>
                 </tr>
             </s:iterator>
