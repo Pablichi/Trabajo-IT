@@ -37,6 +37,14 @@
             <result name="success">/pagos.jsp</result>
         </action>
         
+        <action name="detallePago" class="Controller.detallePagoAction">
+            <result name="success">/detallePago.jsp</result>
+        </action>
+        
+        <action name="eliminarPago" class="Controller.eliminarPagoAction">
+            <result name="success">/pagos.jsp</result>
+        </action>
+        
         <action name="listarReservas" class="Controller.listarReservasAction">
             <result name="success">/adminReservaIndex.jsp</result>
         </action>

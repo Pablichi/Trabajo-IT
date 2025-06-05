@@ -22,11 +22,13 @@
       
         <table>
             <s:iterator value="#session.listaPagos" var="pago">  
-                
-                <tr>
+                <tr>                  
                     <td>
-                        <s:property value="#pago.metodoPago"/>
-                    </td>                     
+                        <s:a action="detallePago">
+                            <s:param name="idPago" value="%{#pago.id}" />
+                            <s:property value="#pago.metodoPago" />
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>
