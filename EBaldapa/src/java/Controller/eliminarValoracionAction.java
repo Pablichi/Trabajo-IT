@@ -5,7 +5,6 @@
  */
 package Controller;
 
-import WS.DestinoWS;
 import WS.ValoracionWS;
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionContext;
@@ -33,9 +32,6 @@ public class eliminarValoracionAction extends ActionSupport {
     }
     public eliminarValoracionAction() {
     }
-    
-    // Eliminamos el destino de la base de datos,
-    // y actualizamos la variable que contiene la lista
     
     public String execute() throws Exception {
         

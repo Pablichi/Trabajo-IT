@@ -26,13 +26,15 @@
         <div class="container">
       
         <table>
-            <s:iterator value="#session.listaValoraciones" var="valoracion">  
-                
-                <tr>
+            <s:iterator value="#session.listaValoraciones" var="valoracion">          
+                <tr>                  
                     <td>
-                        <s:property value="#valoracion.id"/>
-                    </td>     
-                    
+                        <s:a action="detalleValoracion">
+                            <s:param name="idValoracion" value="%{#valoracion.id}" />
+                            <s:property value="#valoracion.id" />
+                            <s:property value="#valoracion.puntuacion" />
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>

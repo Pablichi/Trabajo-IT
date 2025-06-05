@@ -5,16 +5,12 @@
 <struts>
     
     <!-- Configuration for the default package. -->
-    
-
-    
     <package name="default" extends="struts-default">
         <action name="" class="Controller.listarDestinosAction">
             <result name="success">/adminDestinoIndex.jsp</result>
         </action>
     </package>
     
-    <!--CRUD VALORACIONES-->
     
     <package name="acciones" extends="struts-default">
         
@@ -29,6 +25,15 @@
         <action name="listarValoraciones" class="Controller.listarValoracionesAction">
             <result name="success">/adminValoracionesIndex.jsp</result>
         </action>
+        
+        <action name="detalleValoracion" class="Controller.detalleValoracionAction">
+            <result name="success">/detalleValoracion.jsp</result>
+        </action>
+        
+        <action name="eliminarValoracion" class="Controller.eliminarValoracionAction">
+            <result name="success">/adminValoracionesIndex.jsp</result>
+        </action>
+        
         <action name="listarPaquetes" class="Controller.listarPaquetesAction">
             <result name="success">/adminPaqueteIndex.jsp</result>
         </action>
@@ -77,22 +82,5 @@
             <result name="success">/detallePromocion.jsp</result>
         </action>
     </package>
-    
-      <!--      <action name="anadirDestino" class="Controller.anadirDestinoAction">
-                <result name="success">/adminDestinoIndex.jsp</result>
-                <result name="input">/adminDestinoIndex.jsp</result>
-                <result name="error">/adminDestinoIndex.jsp</result>
-        </action>
 
-        <action name="eliminarDestino" class="Controller.eliminarDestinoAction">
-                <result name="success">/adminDestinoIndex.jsp</result> 
-                <result name="error">/adminDestinoIndex.jsp</result>
-        </action>
-        
-        <action name="eliminarValoracion" class="Controller.eliminarValoracionAction">
-                <result name="success">/adminValoracionIndex.jsp</result> 
-                <result name="error">/adminValoracionIndex.jsp</result>
-        </action>-->
-    
-    
 </struts>
