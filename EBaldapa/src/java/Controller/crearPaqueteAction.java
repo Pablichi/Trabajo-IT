@@ -24,6 +24,11 @@ public class crearPaqueteAction extends ActionSupport {
     private String titulo;
     private float precio;
     private Date fechaSalida;
+    private String ServiciosIncluidos;
+    
+    private int idDestino;
+    private int idProveedor;
+    
     private Destino destino;
     private ProveedorServicios proveedor;
 
@@ -82,6 +87,14 @@ public class crearPaqueteAction extends ActionSupport {
     public void setProveedor(ProveedorServicios proveedor) {
         this.proveedor = proveedor;
     }
+
+    public String getServiciosIncluidos() {
+        return ServiciosIncluidos;
+    }
+
+    public void setServiciosIncluidos(String ServiciosIncluidos) {
+        this.ServiciosIncluidos = ServiciosIncluidos;
+    }
     
     public crearPaqueteAction() {
     }
@@ -90,16 +103,23 @@ public class crearPaqueteAction extends ActionSupport {
         
         PaqueteTuristico paqueteT = new PaqueteTuristico();
         
-        paqueteT.setDescripcion("desc");
-        paqueteT.setDuracion(50);
-        paqueteT.setTitulo("prueba");
-        paqueteT.setPrecio(80);
+        int idRandom;
+        idRandom = (int) Math.random();
+        
+        paqueteT.setId(idRandom);
+        paqueteT.setTitulo(titulo);
+        paqueteT.setDescripcion(descripcion);
         
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date fecha_parseada = format.parse("1987-05-27");
         paqueteT.setFechaSalida(fecha_parseada);
+        
+        paqueteT.setDuracion(duracion);
+        paqueteT.setPrecio(precio);
+        
+        paqueteT.setServiciosIncluidos(ServiciosIncluidos);
 
-        //paqueteT.setIdDestino(destino);
+        //paqueteT.setIdDestino(idDestino);
         //paqueteT.setIdProveedor(proveedor);
         
         PaqueteTuristicoWS paqueteTuristico = new PaqueteTuristicoWS();
