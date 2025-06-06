@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-jun-2025, 18:30:12
+    Author     : DaniMaja
+*/
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #34495e;
+    padding: 8px 0;
+    clear: both; /* Asegura que no haya elementos flotantes */
+    line-height: 1.5; /* Mejora la separación entre líneas */
+}
+
+h1 {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #3498db; /* Azul vibrante */
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el mouse */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding: 10px 0;
+    border-bottom: 2px solid #3498db; /* Línea decorativa azul debajo */
+}

@@ -11,6 +11,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <s:head/>
+        <link rel="stylesheet" type="text/css" href="css/estiloDetalle.css">
     </head>
     <body>
         <h1>Detalle del paquete Turístico #<s:property value="paquete.id"/>: <s:property value="paquete.titulo"/></h1>

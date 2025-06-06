@@ -141,7 +141,6 @@ public class crearPaqueteAction extends ActionSupport {
         
         //Date fecha_parseada = ("1987-05-27");
         
-        
         paqueteT.setFechaSalida(fecha_parseada);
         
         paqueteT.setDuracion(duracion);
