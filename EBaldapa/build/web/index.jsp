@@ -21,56 +21,36 @@
         <header>
             <h1><s:text name="tituloIndex"/></h1>
         </header>
+            <div class="container">
+                <div class="column">
+                    <s:form action="listarClientes">
+                        <s:submit key="Clientes" />
+                    </s:form>
+                    <s:form action="listarPaquetes">
+                        <s:submit key="Paquetes" />
+                    </s:form>
+                    <s:form action="listarDestinos">
+                        <s:submit key="Destinos" />
+                    </s:form>
+                    <s:form action="listarProveedores">
+                        <s:submit key="Proveedores" />
+                    </s:form>
+                </div>
 
-        <div class="container">
-            
-            <div>
-                <s:form action="listarClientes">
-                    <s:submit key="Clientes" />
-                </s:form>
+                <div class="column">
+                    <s:form action="listarReservas">
+                        <s:submit key="Reservas" />
+                    </s:form>
+                    <s:form action="listarPagos">
+                        <s:submit key="Pagos" />
+                    </s:form>
+                    <s:form action="listarPromociones">
+                        <s:submit key="Promociones" />
+                    </s:form>
+                    <s:form action="listarValoraciones">
+                        <s:submit key="Valoraciones" />
+                    </s:form>
+                </div>
             </div>
-            
-            <div>   
-                <s:form action="listarPaquetes">
-                    <s:submit key="Paquetes" />
-                </s:form>
-            </div>
-          
-            <div>
-                <s:form action="listarDestinos">
-                    <s:submit key="Destinos" />
-                </s:form>
-            </div>
-            
-            <div>
-                <s:form action="listarProveedores">
-                    <s:submit key="Proveedores" />
-                </s:form>
-            </div>
-            
-            <div>
-                <s:form action="listarReservas">
-                    <s:submit key="Reservas" />
-                </s:form>
-            </div>
-            
-            <div>
-                <s:form action="listarPagos">
-                    <s:submit key="Pagos" />
-                </s:form>
-            </div>
-            
-            <div>
-                <s:form action="listarPromociones">
-                    <s:submit key="Promociones" />
-                </s:form>
-            </div>
-            
-            <div>
-                <s:form action="listarValoraciones">
-                    <s:submit key="Valoraciones" />
-                </s:form>
-            </div>
-        </div>    
     </body>
 </html>

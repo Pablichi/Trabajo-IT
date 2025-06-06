@@ -5,10 +5,17 @@
  */
 package Controller;
 
+import WS.DestinoWS;
 import WS.PaqueteTuristicoWS;
+import WS.ProveedorServiciosWS;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import javax.ws.rs.core.GenericType;
 import modelo.Destino;
 import modelo.PaqueteTuristico;
 import modelo.ProveedorServicios;
@@ -23,7 +30,7 @@ public class crearPaqueteAction extends ActionSupport {
     private int duracion;
     private String titulo;
     private float precio;
-    private Date fechaSalida;
+    private String fechaSalida;
     private String ServiciosIncluidos;
     
     private int idDestino;
@@ -64,14 +71,6 @@ public class crearPaqueteAction extends ActionSupport {
         this.precio = precio;
     }
 
-    public Date getFechaSalida() {
-        return fechaSalida;
-    }
-
-    public void setFechaSalida(Date fechaSalida) {
-        this.fechaSalida = fechaSalida;
-    }
-
     public Destino getDestino() {
         return destino;
     }
@@ -96,6 +95,7 @@ public class crearPaqueteAction extends ActionSupport {
         this.ServiciosIncluidos = ServiciosIncluidos;
     }
     
+    
     public crearPaqueteAction() {
     }
     
@@ -111,20 +111,49 @@ public class crearPaqueteAction extends ActionSupport {
         paqueteT.setDescripcion(descripcion);
         
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        Date fecha_parseada = format.parse("1987-05-27");
+        Date fecha_parseada = format.parse(fechaSalida);
         paqueteT.setFechaSalida(fecha_parseada);
         
         paqueteT.setDuracion(duracion);
         paqueteT.setPrecio(precio);
         
         paqueteT.setServiciosIncluidos(ServiciosIncluidos);
-
-        //paqueteT.setIdDestino(idDestino);
-        //paqueteT.setIdProveedor(proveedor);
         
         PaqueteTuristicoWS paqueteTuristico = new PaqueteTuristicoWS();
+        
+        DestinoWS cliente = new DestinoWS();
+                GenericType<Destino> genericType = new GenericType<Destino>(){
+        };
+        Destino data = new Destino();
+        data = (Destino) cliente.find_XML(genericType, Integer.toString(idDestino));     
+         
+        destino = data;
+        
+        paqueteT.setIdDestino(destino);
+        
+        ProveedorServiciosWS ps = new ProveedorServiciosWS();
+        GenericType<ProveedorServicios> genericType2 = new GenericType<ProveedorServicios>(){
+        };
+        ProveedorServicios data2 = new ProveedorServicios();
+        data2 = (ProveedorServicios) ps.find_XML(genericType2, Integer.toString(idProveedor));     
+         
+        proveedor = data2;
+        
+        paqueteT.setIdProveedor(proveedor);
+        
         Object obj_paquete = paqueteT;
         paqueteTuristico.create_XML(obj_paquete);
+        
+        // creo la nueva lista de paquetes ya con el nuevo paquete incorporado y la paso a la vista
+        
+        PaqueteTuristicoWS clienteListado = new PaqueteTuristicoWS();
+        GenericType<List<PaqueteTuristico>> genericTypeListado = new GenericType<List<PaqueteTuristico>>(){
+        };
+        List <PaqueteTuristico> dataListado = new ArrayList<PaqueteTuristico>();
+        dataListado = (List<PaqueteTuristico>) clienteListado.findAll_XML(genericTypeListado);     
+         
+        Map <String, Object> session = ActionContext.getContext().getSession();
+        session.put("listaPaquetes", dataListado);
         
         return SUCCESS;
     }
