@@ -52,6 +52,14 @@
             <result name="success">/adminPaqueteIndex.jsp</result>
         </action>
         
+        <action name="crearPaqueteForm" class="Controller.crearPaqueteFormAction">
+            <result name="success">/crearPaquete.jsp</result>
+        </action>
+        
+        <action name="crearPaquete" class="Controller.crearPaqueteAction">
+            <result name="success">/adminPaqueteIndex.jsp</result>
+        </action>
+        
         <!-- Proveedores -->
         <action name="listarProveedores" class="Controller.listarProveedorAction">
             <result name="success">/proveedores.jsp</result>
