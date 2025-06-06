@@ -25,6 +25,8 @@
             <s:hidden name="idPago" value="%{pago.id}" />
             <s:submit key="Eliminar pago" />
         </s:form>   
-
+        
+        
+        <s:a action="listarPagos">Volver al listado</s:a>
     </body>
 </html>

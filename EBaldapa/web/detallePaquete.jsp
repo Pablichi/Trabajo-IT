@@ -28,5 +28,6 @@
             <s:submit key="Eliminar paquete" />
         </s:form>   
 
+        <s:a action="listarPaquetes">Volver al listado</s:a>
     </body>
 </html>

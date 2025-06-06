@@ -27,5 +27,7 @@
             <s:submit key="Eliminar valoracion" />
         </s:form>
 
+        
+        <s:a action="listarValoraciones">Volver al listado</s:a>
     </body>
 </html>
