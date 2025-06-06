@@ -10,10 +10,10 @@
             <result name="success">/adminDestinoIndex.jsp</result>
         </action>
     </package>
-    
-    
+
     <package name="acciones" extends="struts-default">
         
+        <!-- Destinos -->
         <action name="detalleDestino" class="Controller.detalleDestinoAction">
             <result name="success">/detalleDestino.jsp</result>
         </action>
@@ -22,6 +22,7 @@
             <result name="success">/adminDestinoIndex.jsp</result>
         </action>
         
+        <!-- Valoraciones -->
         <action name="listarValoraciones" class="Controller.listarValoracionesAction">
             <result name="success">/adminValoracionesIndex.jsp</result>
         </action>
@@ -34,18 +35,38 @@
             <result name="success">/adminValoracionesIndex.jsp</result>
         </action>
         
+        <!-- Paquetes  -->
         <action name="listarPaquetes" class="Controller.listarPaquetesAction">
             <result name="success">/adminPaqueteIndex.jsp</result>
         </action>
         
+        <action name="detallePaquete" class="Controller.detallePaqueteAction">
+            <result name="success">/detallePaquete.jsp</result>
+        </action>
+        
+        <action name="eliminarPaquete" class="Controller.eliminarPaqueteAction">
+            <result name="success">/adminPaqueteIndex.jsp</result>
+        </action>
+        
+        <!-- Proveedores -->
         <action name="listarProveedores" class="Controller.listarProveedorAction">
             <result name="success">/proveedores.jsp</result>
         </action>
         
+        <!-- Promociones -->
         <action name="listarPromociones" class="Controller.listarPromocionesAction">
             <result name="success">/promociones.jsp</result>
         </action>
         
+        <action name="detallePromocion" class="Controller.detallePromocionAction">
+            <result name="success">/detallePromocion.jsp</result>
+        </action>
+        
+        <action name="eliminarPromocion" class="Controller.eliminarPromocionAction">
+            <result name="success">/promociones.jsp</result>
+        </action>
+        
+        <!-- Pagos -->
         <action name="listarPagos" class="Controller.listarPagosAction">
             <result name="success">/pagos.jsp</result>
         </action>
@@ -58,16 +79,9 @@
             <result name="success">/pagos.jsp</result>
         </action>
         
+        <!-- Reservas -->
         <action name="listarReservas" class="Controller.listarReservasAction">
             <result name="success">/adminReservaIndex.jsp</result>
-        </action>
-        
-        <action name="detallePaquete" class="Controller.detallePaqueteAction">
-            <result name="success">/detallePaquete.jsp</result>
-        </action>
-        
-        <action name="eliminarPaquete" class="Controller.eliminarPaqueteAction">
-            <result name="success">/adminPaqueteIndex.jsp</result>
         </action>
         
         <action name="detalleReserva" class="Controller.detalleReservaAction">
@@ -77,10 +91,7 @@
         <action name="eliminarReserva" class="Controller.eliminarReservaAction">
             <result name="success">/adminReservaIndex.jsp</result>
         </action>
-        
-        <action name="detallePromocion" class="Controller.detallePromocionAction">
-            <result name="success">/detallePromocion.jsp</result>
-        </action>
+
     </package>
 
 </struts>
