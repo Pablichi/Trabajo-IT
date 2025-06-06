@@ -68,6 +68,14 @@
         <action name="detallePromocion" class="Controller.detallePromocionAction">
             <result name="success">/detallePromocion.jsp</result>
         </action>
+        
+        <action name="detalleProveedores" class="Controller.detalleProveedoresAction">
+            <result name="success">/detalleProveedores.jsp</result>
+        </action>
+        
+        <action name="eliminarProveedor" class="Controller.eliminarProveedorAction">
+            <result name="success">/proveedores.jsp</result>
+        </action>
     </package>
     
       <!--      <action name="anadirDestino" class="Controller.anadirDestinoAction">

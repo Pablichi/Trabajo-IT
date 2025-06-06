@@ -25,7 +25,10 @@
                 
                 <tr>
                     <td>
-                        <s:property value="#proveedor.nombreEmpresa"/>
+                        <s:a action="detalleProveedores">
+                            <s:param name="idProveedor" value="%{#proveedor.id}" />
+                            <s:property value="#proveedor.nombreEmpresa" />
+                        </s:a>
                     </td>                     
     
                 </tr>
