@@ -14,6 +14,7 @@
     </head>
     <body>
         <header>
+            <s:a action="">Índice</s:a>
             <h1><s:text name="tituloAdminDestinos"/></h1>
         </header>
 

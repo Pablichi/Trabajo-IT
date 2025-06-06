@@ -19,6 +19,7 @@
     </head>
     <body>
         <header>
+            <s:a action="">Índice</s:a>
             <h1><s:text name="tituloAdminValoraciones"/></h1>
         </header>
 

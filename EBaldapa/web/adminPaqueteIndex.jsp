@@ -16,6 +16,7 @@
     </head>
     <body>
         <header>
+            <s:a action="">Índice</s:a>
             <h1><s:text name="adminPaquetes">Paquetes Turísticos</s:text></h1>
             </header>
 

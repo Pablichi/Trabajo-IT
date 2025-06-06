@@ -20,6 +20,7 @@
     </head>
     <body>
         <header>
+            <s:a action="">Índice</s:a>
             <h1><s:text name="tituloClientes"/></h1>
         </header>
 
