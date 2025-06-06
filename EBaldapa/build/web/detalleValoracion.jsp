@@ -23,9 +23,9 @@
         <p>Paquete turistico: <s:property value="%{valoracion.idPaquete.titulo}"/></p>
         
         <s:form action="eliminarValoracion">
-            <s:param name="idValoracion" value="%{valoracion.id}" />
+            <s:hidden name="idValoracion" value="%{valoracion.id}" />
             <s:submit key="Eliminar valoracion" />
-        </s:form>   
+        </s:form>
 
     </body>
 </html>

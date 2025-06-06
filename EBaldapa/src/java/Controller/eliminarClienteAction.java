@@ -35,6 +35,7 @@ public class eliminarClienteAction extends ActionSupport {
     
     public String execute() throws Exception {
         ClienteWS cliente = new ClienteWS();
+
         cliente.remove(String.valueOf(this.getIdCliente()));
 
         GenericType<List<Cliente>> genericType2 = new GenericType<List<Cliente>>() {

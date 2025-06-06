@@ -26,7 +26,7 @@ public class eliminarPaqueteAction extends ActionSupport {
         return idPaquete;
     }
 
-    public void setIdPaquete(int paqueteId) {
+    public void setIdPaquete(int idPaquete) {
         this.idPaquete = idPaquete;
     }
     
@@ -35,7 +35,7 @@ public class eliminarPaqueteAction extends ActionSupport {
     
     public String execute() throws Exception {
         PaqueteTuristicoWS cliente = new PaqueteTuristicoWS();
-        cliente.remove(String.valueOf(this.getIdPaquete()));
+        cliente.remove(Integer.toString(this.getIdPaquete()));
 
         GenericType<List<PaqueteTuristico>> genericType2 = new GenericType<List<PaqueteTuristico>>() {
         };

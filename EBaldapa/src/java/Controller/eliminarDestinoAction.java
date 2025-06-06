@@ -21,14 +21,14 @@ import modelo.Destino;
  */
 public class eliminarDestinoAction extends ActionSupport {
     
-    private int id;
+    private int idDestino;
 
-    public int getId() {
-        return id;
+    public int getIdDestino() {
+        return idDestino;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdDestino(int idDestino) {
+        this.idDestino = idDestino;
     }
     
     
@@ -41,7 +41,7 @@ public class eliminarDestinoAction extends ActionSupport {
     public String execute() throws Exception {
         
         DestinoWS destino = new DestinoWS();
-        destino.remove(String.valueOf(this.getId()));
+        destino.remove(String.valueOf(this.getIdDestino()));
 
         GenericType<List<Destino>> genericType2 = new GenericType<List<Destino>>() {
         };

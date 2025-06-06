@@ -31,7 +31,6 @@ public class detalleReservaAction extends ActionSupport {
         data = (Reserva) cliente.find_XML(genericType, Integer.toString(idReserva));     
          
         reserva = data;
-        System.out.println("Reserva: " + reserva.getEstado());
         return SUCCESS;
     }
 

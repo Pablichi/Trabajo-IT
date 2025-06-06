@@ -22,9 +22,9 @@
         <p>Servicios: <s:property value="%{paquete.serviciosIncluidos}"/></p>
         <p>Destino: <s:property value="%{paquete.idDestino.nombre}"/></p>
         <p>Proveedor: <s:property value="%{paquete.idProveedor.nombreEmpresa}"/></p>
-        
+
         <s:form action="eliminarPaquete">
-            <s:param name="idPaquete" value="%{#paquete.id}" />
+            <s:hidden name="idPaquete" value="%{paquete.id}" />
             <s:submit key="Eliminar paquete" />
         </s:form>   
 

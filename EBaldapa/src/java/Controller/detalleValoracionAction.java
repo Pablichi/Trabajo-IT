@@ -47,7 +47,6 @@ public class detalleValoracionAction extends ActionSupport {
         data = (Valoracion) cliente.find_XML(genericType, Integer.toString(idValoracion));     
          
         valoracion = data;
-        System.out.println("Valoracion: " + valoracion.getPuntuacion());
         return SUCCESS;
         
     }

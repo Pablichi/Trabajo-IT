@@ -22,7 +22,7 @@
         <p>Reserva: <s:property value="%{pago.idReserva.id}"/></p>
         
         <s:form action="eliminarPago">
-            <s:param name="idPago" value="%{#pago.id}" />
+            <s:hidden name="idPago" value="%{pago.id}" />
             <s:submit key="Eliminar pago" />
         </s:form>   
 

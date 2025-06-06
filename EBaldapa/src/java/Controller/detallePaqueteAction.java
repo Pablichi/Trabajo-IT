@@ -28,11 +28,19 @@ public class detallePaqueteAction extends ActionSupport {
         this.idPaquete = idPaquete;
     }
     
+     public PaqueteTuristico getPaquete() {
+        return paquete;
+    }
+
+    public void setPaquete(PaqueteTuristico paquete) {
+        this.paquete = paquete;
+    }
     
     public detallePaqueteAction() {
     }
     
     public String execute() throws Exception {
+        
         PaqueteTuristicoWS cliente = new PaqueteTuristicoWS();
         GenericType<PaqueteTuristico> genericType = new GenericType<PaqueteTuristico>(){
         };
@@ -44,12 +52,6 @@ public class detallePaqueteAction extends ActionSupport {
         return SUCCESS;
     }
 
-    public PaqueteTuristico getPaquete() {
-        return paquete;
-    }
-
-    public void setPaquete(PaqueteTuristico paquete) {
-        this.paquete = paquete;
-    }
+   
     
 }

@@ -19,7 +19,7 @@ public class detalleClienteAction extends ActionSupport {
         
     private int idCliente;
  
-    private Cliente cli;
+    private Cliente cliente;
 
     public int getIdCliente() {
         return idCliente;
@@ -29,25 +29,25 @@ public class detalleClienteAction extends ActionSupport {
         this.idCliente = idCliente;
     }
 
-    public Cliente getCli() {
-        return cli;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setCli(Cliente cli) {
-        this.cli = cli;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
     
     public detalleClienteAction() {
     }
     
     public String execute() throws Exception {
-        ClienteWS cliente = new ClienteWS();
+        ClienteWS clientews = new ClienteWS();
         GenericType<Cliente> genericType = new GenericType<Cliente>(){
         };
         Cliente data = new Cliente();
-        data = (Cliente) cliente.find_XML(genericType, Integer.toString(idCliente));     
-         
-        cli = data;
+        data = (Cliente) clientews.find_XML(genericType, Integer.toString(idCliente));     
+        System.out.println(data.getNombre());
+        cliente = data;
        
         return SUCCESS;
     }

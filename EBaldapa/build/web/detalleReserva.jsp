@@ -24,7 +24,7 @@
 
         
         <s:form action="eliminarReserva">
-            <s:param name="idReserva" value="%{#reserva.id}" />
+            <s:hidden name="idReserva" value="%{reserva.id}" />
             <s:submit key="Eliminar reserva" />
         </s:form>   
         
