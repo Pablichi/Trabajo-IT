@@ -28,5 +28,7 @@
             <s:submit key="Eliminar destino" />
         </s:form>   
 
+        
+        <s:a action="listarDestinos">Volver al listado</s:a>
     </body>
 </html>

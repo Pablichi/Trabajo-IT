@@ -30,5 +30,8 @@
             <s:submit key="Eliminar reserva" />
         </s:form>   
         
+        
+        <s:a action="listarReservas">Volver al listado</s:a>
+        
     </body>
 </html>

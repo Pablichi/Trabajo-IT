@@ -15,6 +15,9 @@
         <link rel="stylesheet" type="text/css" href="css/estiloDetalle.css">
     </head>
     <body>
+        <header>
+
+        </header>
         <h1>Detalle del cliente #<s:property value="cliente.id"/></h1>
 
         <p>Nombre cliente <s:property value="%{cliente.nombre}"/></p>
@@ -26,7 +29,10 @@
             <s:hidden name="idCliente" value="%{cliente.id}" />
             <s:submit key="Eliminar cliente" />
         </s:form>
-
-
+        
+        
+        <s:a action="listarClientes">Volver al listado</s:a>
+        
+        
     </body>
 </html>

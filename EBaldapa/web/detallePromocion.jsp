@@ -27,7 +27,9 @@
         <s:form action="eliminarPromocion">
             <s:hidden name="idPromocion" value="%{promocion.id}" />
             <s:submit key="Eliminar promocion" />
-        </s:form>   
+        </s:form>  
+        
+        <s:a action="listarPromociones">Volver al listado</s:a>
 
     </body>
 </html>

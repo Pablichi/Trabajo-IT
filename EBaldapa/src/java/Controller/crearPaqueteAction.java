@@ -136,7 +136,7 @@ public class crearPaqueteAction extends ActionSupport {
         paqueteT.setTitulo(titulo);
         paqueteT.setDescripcion(descripcion);
        
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date fecha_parseada = format.parse(fechaSalida);
         
         //Date fecha_parseada = ("1987-05-27");

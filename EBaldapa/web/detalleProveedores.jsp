@@ -26,6 +26,8 @@
             <s:hidden name="idProveedor" value="%{proveedor.id}" />
             <s:submit key="Eliminar proveedor" />
         </s:form>   
+        
+        <s:a action="listarProveedor">Volver al listado</s:a>
 
     </body>
 </html>
