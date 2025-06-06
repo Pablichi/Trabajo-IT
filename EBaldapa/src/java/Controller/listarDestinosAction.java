@@ -24,10 +24,6 @@ public class listarDestinosAction extends ActionSupport {
     public listarDestinosAction() {
     }
     
-    
-    // con esta clase hacemos un select * en la base de datos de la tabla destino
-    // y volcamos el resultado en data que pasaremos a la sesion
-    
     public String execute() throws Exception {
         
         DestinoWS destino = new DestinoWS();
