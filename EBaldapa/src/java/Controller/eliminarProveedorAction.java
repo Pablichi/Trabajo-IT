@@ -36,7 +36,6 @@ public class eliminarProveedorAction extends ActionSupport {
     }
     
     public String execute() throws Exception {
-        System.out.println(idProveedor);
         
         ProveedorServiciosWS cliente = new ProveedorServiciosWS();
         cliente.remove(String.valueOf(this.getIdProveedor()));

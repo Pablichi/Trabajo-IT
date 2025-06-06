@@ -22,7 +22,7 @@
         <p>Descripcion: <s:property value="%{destino.descripcion}"/></p>
         
         <s:form action="eliminarDestino">
-            <s:param name="idDestino" value="%{#destino.id}" />
+            <s:hidden name="idDestino" value="%{destino.id}" />
             <s:submit key="Eliminar destino" />
         </s:form>   
 

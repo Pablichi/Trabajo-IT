@@ -20,14 +20,14 @@ import modelo.Pago;
  */
 public class eliminarPagoAction extends ActionSupport {
     
-    private int pagoId;
+    private int idPago;
 
-    public int getPagoId() {
-        return pagoId;
+    public int getIdPago() {
+        return idPago;
     }
 
-    public void setPagoId(int pagoId) {
-        this.pagoId = pagoId;
+    public void setIdPago(int idPago) {
+        this.idPago = idPago;
     }
     
     public eliminarPagoAction() {
@@ -36,7 +36,7 @@ public class eliminarPagoAction extends ActionSupport {
     public String execute() throws Exception {
         
         PagoWS pago = new PagoWS();
-        pago.remove(String.valueOf(this.getPagoId()));
+        pago.remove(String.valueOf(this.getIdPago()));
 
         GenericType<List<Pago>> genericType2 = new GenericType<List<Pago>>() {
         };

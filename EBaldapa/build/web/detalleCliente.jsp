@@ -21,9 +21,10 @@
         <p>Direccion: <s:property value="%{cliente.direccion}"/></p>
         
         <s:form action="eliminarCliente">
-            <s:param name="idCliente" value="%{#cliente.id}" />
+            <s:hidden name="idCliente" value="%{cliente.id}" />
             <s:submit key="Eliminar cliente" />
-        </s:form>   
+        </s:form>
+
 
     </body>
 </html>

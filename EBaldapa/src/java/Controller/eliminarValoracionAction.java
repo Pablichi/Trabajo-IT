@@ -21,14 +21,14 @@ import modelo.Valoracion;
  */
 public class eliminarValoracionAction extends ActionSupport {
     
-    private int id;
+    private int idValoracion;
 
-    public int getId() {
-        return id;
+    public int getIdValoracion() {
+        return idValoracion;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdValoracion(int idValoracion) {
+        this.idValoracion = idValoracion;
     }
     public eliminarValoracionAction() {
     }
@@ -36,7 +36,7 @@ public class eliminarValoracionAction extends ActionSupport {
     public String execute() throws Exception {
         
         ValoracionWS valoracion = new ValoracionWS();
-        valoracion.remove(String.valueOf(this.getId()));
+        valoracion.remove(String.valueOf(this.getIdValoracion()));
 
         GenericType<List<Valoracion>> genericType2 = new GenericType<List<Valoracion>>() {
         };

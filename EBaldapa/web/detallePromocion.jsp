@@ -23,7 +23,7 @@
         <p>Paquete: <s:property value="%{promocion.idPaquete.titulo}"/></p>
         
         <s:form action="eliminarPromocion">
-            <s:param name="idPromocion" value="%{promocion.id}" />
+            <s:hidden name="idPromocion" value="%{promocion.id}" />
             <s:submit key="Eliminar promocion" />
         </s:form>   
 
