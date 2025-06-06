@@ -91,6 +91,19 @@
         <action name="eliminarReserva" class="Controller.eliminarReservaAction">
             <result name="success">/adminReservaIndex.jsp</result>
         </action>
+        
+        <!-- Clientes -->
+        <action name="listarClientes" class="Controller.listarClientesAction">
+            <result name="success">/clientes.jsp</result>
+        </action>
+        
+        <action name="detalleCliente" class="Controller.detalleClienteAction">
+            <result name="success">/detalleCliente.jsp</result>
+        </action>
+        
+        <action name="eliminarCliente" class="Controller.eliminarClienteAction">
+            <result name="success">/clientes.jsp</result>
+        </action>
 
     </package>
 

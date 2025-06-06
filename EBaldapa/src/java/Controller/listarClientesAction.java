@@ -5,34 +5,33 @@
  */
 package Controller;
 
-import WS.DestinoWS;
-import static com.opensymphony.xwork2.Action.SUCCESS;
+import WS.ClienteWS;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import javax.ws.rs.core.GenericType;
-import modelo.Destino;
+import modelo.Cliente;
 
 /**
  *
  * @author DaniMaja
  */
-public class listarDestinosAction extends ActionSupport {
+public class listarClientesAction extends ActionSupport {
     
-    public listarDestinosAction() {
+    public listarClientesAction() {
     }
     
     public String execute() throws Exception {
         
-        DestinoWS destino = new DestinoWS();
-        GenericType<List<Destino>> genericType = new GenericType<List<Destino>>(){
+        ClienteWS destino = new ClienteWS();
+        GenericType<List<Cliente>> genericType = new GenericType<List<Cliente>>(){
         };
-        List <Destino> data = new ArrayList<Destino>();
-        data = (List<Destino>) destino.findAll_XML(genericType);
+        List <Cliente> data = new ArrayList<Cliente>();
+        data = (List<Cliente>) destino.findAll_XML(genericType);
         Map <String, Object> session = ActionContext.getContext().getSession();
-        session.put("listaDestinos", data);
+        session.put("listaClientes", data);
         return SUCCESS;
     }
     
