@@ -58,6 +58,7 @@
         
         <action name="crearPaquete" class="Controller.crearPaqueteAction">
             <result name="success">/adminPaqueteIndex.jsp</result>
+            <result name="input">/crearPaquete.jsp</result>
         </action>
         
         <!-- Proveedores -->
