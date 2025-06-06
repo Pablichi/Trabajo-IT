@@ -13,7 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><s:text name="tituloAdmin"/></title>
         <s:head/>
-        <link rel="stylesheet" type="text/css" href="css/adminValoracionesIndex.css">
+        <link rel="stylesheet" type="text/css" href="css/estiloListas.css">
 
 
     </head>

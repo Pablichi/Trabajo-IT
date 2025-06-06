@@ -31,6 +31,7 @@ public class crearPaqueteAction extends ActionSupport {
     private String titulo;
     private float precio;
     private String fechaSalida;
+
     private String ServiciosIncluidos;
     
     private int idDestino;
@@ -38,6 +39,31 @@ public class crearPaqueteAction extends ActionSupport {
     
     private Destino destino;
     private ProveedorServicios proveedor;
+
+    public String getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(String fechaSalida) {
+        this.fechaSalida = fechaSalida;
+    }
+
+
+    public int getIdDestino() {
+        return idDestino;
+    }
+
+    public void setIdDestino(int idDestino) {
+        this.idDestino = idDestino;
+    }
+
+    public int getIdProveedor() {
+        return idProveedor;
+    }
+
+    public void setIdProveedor(int idProveedor) {
+        this.idProveedor = idProveedor;
+    }
 
     public String getDescripcion() {
         return descripcion;
@@ -109,9 +135,13 @@ public class crearPaqueteAction extends ActionSupport {
         paqueteT.setId(idRandom);
         paqueteT.setTitulo(titulo);
         paqueteT.setDescripcion(descripcion);
-        
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+       
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-");
         Date fecha_parseada = format.parse(fechaSalida);
+        
+        //Date fecha_parseada = ("1987-05-27");
+        
+        
         paqueteT.setFechaSalida(fecha_parseada);
         
         paqueteT.setDuracion(duracion);

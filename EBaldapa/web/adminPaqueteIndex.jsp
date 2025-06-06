@@ -10,7 +10,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title><s:text name="tituloPaquete"/></title>
+        <s:head/>
+        <link rel="stylesheet" type="text/css" href="css/estiloListas.css">
     </head>
     <body>
         <header>
