@@ -11,6 +11,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Creacion de Paquetes turisticos</title>
+                <s:head/>
+        <link rel="stylesheet" type="text/css" href="css/estiloDetalle.css">
     </head>
     <body>
         <header>
