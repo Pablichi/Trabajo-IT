@@ -43,12 +43,5 @@
             
         </div>
         
-        
-        <div>
-            <s:form action="listarProveedores">
-                <s:submit key="ver proveedores" />
-            </s:form>
-        </div>    
-
     </body>
 </html>

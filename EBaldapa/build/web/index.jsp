@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title><s:text name="tituloAPP"/></title>
+        <title><s:text name="tituloIndex"/></title>
         <s:head/>
         <link rel="stylesheet" type="text/css" href="css/estiloIndex.css">
 
@@ -24,31 +24,31 @@
             <div class="container">
                 <div class="column">
                     <s:form action="listarClientes">
-                        <s:submit key="Clientes" />
+                        <s:submit key="cli" />
                     </s:form>
                     <s:form action="listarPaquetes">
-                        <s:submit key="Paquetes" />
+                        <s:submit key="paq" />
                     </s:form>
                     <s:form action="listarDestinos">
-                        <s:submit key="Destinos" />
+                        <s:submit key="des" />
                     </s:form>
                     <s:form action="listarProveedores">
-                        <s:submit key="Proveedores" />
+                        <s:submit key="prov" />
                     </s:form>
                 </div>
 
                 <div class="column">
                     <s:form action="listarReservas">
-                        <s:submit key="Reservas" />
+                        <s:submit key="res" />
                     </s:form>
                     <s:form action="listarPagos">
-                        <s:submit key="Pagos" />
+                        <s:submit key="pag" />
                     </s:form>
                     <s:form action="listarPromociones">
-                        <s:submit key="Promociones" />
+                        <s:submit key="prom" />
                     </s:form>
                     <s:form action="listarValoraciones">
-                        <s:submit key="Valoraciones" />
+                        <s:submit key="val" />
                     </s:form>
                 </div>
             </div>

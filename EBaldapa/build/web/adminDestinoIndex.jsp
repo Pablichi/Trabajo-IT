@@ -39,15 +39,6 @@
                 </tr>
             </s:iterator>
         </table>
-  
-        <div>
-            <s:form action="listarValoraciones">
-                <s:submit key="ver valoraciones" />
-            </s:form>
-        </div>  
-            <s:form action="listarPaquetes">
-                <s:submit key="ver paquetes" />
-            </s:form>
-        </div>
+ 
     </body>
 </html>

@@ -3,15 +3,37 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminReservaIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/eliminarProveedorAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detalleReservaAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detalleProveedoresAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/eliminarReservaAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminDestinoIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/modelo/PaqueteTuristico.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/css/estiloIndex.css</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/eliminarPaqueteAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/promociones.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/detalleClienteAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/adminDestinoIndex.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detalleReserva.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/css/estiloListas.css</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/clientes.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/index.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/struts.xml</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detalleProveedores.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/adminReservaIndex.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/proveedores.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/modelo/Destino.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detalleValoracion.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/listarPaquetesAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/pagos.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/adminValoracionesIndex.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detalleCliente.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detalleDestino.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/detalleDestinoAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detallePago.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detallePaquete.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/css/estiloDetalle.css</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/modelo/PaqueteTuristico.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detallePromocion.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/detalleProveedoresAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/modelo/ProveedorServicios.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/adminPaqueteIndex.jsp</file>
         </group>
     </open-files>
 </project-private>
