@@ -5,15 +5,19 @@
 <struts>
     
     <!-- Configuration for the default package. -->
-    <package name="default" extends="struts-default">
-        <action name="" class="Controller.listarDestinosAction">
-            <result name="success">/adminDestinoIndex.jsp</result>
+    <package name="" extends="struts-default">
+        <action name="" class="Controller.cargaInicialAction">
+            <result name="success">/index.jsp</result>
         </action>
     </package>
 
     <package name="acciones" extends="struts-default">
         
         <!-- Destinos -->
+        <action name="listarDestinos" class="Controller.listarDestinosAction">
+            <result name="success">/adminDestinoIndex.jsp</result>
+        </action>
+        
         <action name="detalleDestino" class="Controller.detalleDestinoAction">
             <result name="success">/detalleDestino.jsp</result>
         </action>
