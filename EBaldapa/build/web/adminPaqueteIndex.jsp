@@ -30,13 +30,9 @@
                 </tr>
             </s:iterator>
         </table>
-        <s:form action="nuevoPaqueteAction">
-            <s:submit value="Añadir nuevo paquete" />
+        <s:form action="crearPaqueteForm">
+            <s:submit value="Crear nuevo paquete" />
         </s:form>
 
-
-        <s:form action="listarReservas">
-            <s:submit key="ver reservas" />
-        </s:form>    
     </body>
 </html>
