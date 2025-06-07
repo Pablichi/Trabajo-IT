@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-            
+            <s:a action="">Índice</s:a>
             <h1><s:text name="creacionPagos">Creacion de Pagos</s:text></h1>
             </header>
 
@@ -31,6 +31,6 @@
             <s:submit value="Crear Pago" />
         </s:form>
     
-    <s:a action="listarDestinos">Volver al listado</s:a>
+    <s:a action="listarPagos">Volver al listado</s:a>
     </body>
 </html>

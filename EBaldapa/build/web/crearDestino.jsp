@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-            
+            <s:a action="">Índice</s:a>
             <h1><s:text name="creacionDestinos">Creacion de Destinos</s:text></h1>
             </header>
 

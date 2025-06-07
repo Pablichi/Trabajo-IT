@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-            
+            <s:a action="">Índice</s:a>
             <h1><s:text name="adminClientes">Creacion de Clientes</s:text></h1>
             </header>
 
