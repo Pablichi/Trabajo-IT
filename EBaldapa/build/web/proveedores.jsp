@@ -35,7 +35,10 @@
                 </tr>
             </s:iterator>
         </table>
+            <s:form action="crearProveedorForm">
+                <s:submit value="Crear nuevo proveedor" />
+            </s:form>
         </div>
-
+        
     </body>
 </html>

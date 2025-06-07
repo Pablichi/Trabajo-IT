@@ -82,6 +82,14 @@
             <result name="success">/proveedores.jsp</result>
         </action>
         
+        <action name="crearProveedorForm" class="Controller.crearProveedorFormAction">
+            <result name="success">/crearProveedor.jsp</result>
+        </action>
+        
+        <action name="crearProveedor" class="Controller.crearProveedorAction">
+            <result name="success">/proveedores.jsp</result>
+        </action>
+        
         <!-- Promociones -->
         <action name="listarPromociones" class="Controller.listarPromocionesAction">
             <result name="success">/promociones.jsp</result>
