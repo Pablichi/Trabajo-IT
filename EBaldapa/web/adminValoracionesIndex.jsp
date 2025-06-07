@@ -39,7 +39,9 @@
                 </tr>
             </s:iterator>
         </table>
-            
+            <s:form action="crearValoracionForm">
+                <s:submit value="Crear nueva valoraciion" />
+            </s:form>
         </div>
 
     </body>

@@ -47,6 +47,14 @@
             <result name="success">/adminValoracionesIndex.jsp</result>
         </action>
         
+        <action name="crearValoracionForm" class="Controller.crearValoracionFormAction">
+            <result name="success">/crearValoracion.jsp</result>
+        </action>
+        
+        <action name="crearValoracion" class="Controller.crearValoracionAction">
+            <result name="success">/adminValoracionesIndex.jsp</result>
+        </action>
+        
         <!-- Paquetes  -->
         <action name="listarPaquetes" class="Controller.listarPaquetesAction">
             <result name="success">/adminPaqueteIndex.jsp</result>
