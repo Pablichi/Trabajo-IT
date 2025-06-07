@@ -15,7 +15,7 @@
     <body>
         <header>
             <s:a action="">Índice</s:a>
-            <h1><s:text name="tituloAdminDestinos"/></h1>
+            <h1><s:text name="tituloAdminProveedores"/></h1>
         </header>
 
         <h2><s:text name="listaProveedores"/></h2>

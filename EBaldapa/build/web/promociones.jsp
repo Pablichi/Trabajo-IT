@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title><s:text name="tituloAdmin"/></title>
+        <title><s:text name="tituloPromociones"/></title>
         <s:head/>
         <link rel="stylesheet" type="text/css" href="css/estiloListas.css">
 
@@ -15,7 +15,7 @@
     <body>
         <header>
             <s:a action="">Índice</s:a>
-            <h1><s:text name="tituloAdminDestinos"/></h1>
+            <h1><s:text name="tituloPromociones"/></h1>
         </header>
 
         <h2><s:text name="listaPromociones"/></h2>

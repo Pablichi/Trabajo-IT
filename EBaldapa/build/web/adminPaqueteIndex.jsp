@@ -17,10 +17,10 @@
     <body>
         <header>
             <s:a action="">Índice</s:a>
-            <h1><s:text name="adminPaquetes">Paquetes Turísticos</s:text></h1>
+            <h1><s:text name="adminPaquetes"></s:text></h1>
             </header>
 
-            <h2><s:text name="listaPaquetes">Lista de Paquetes Turísticos</s:text></h2>
+            <h2><s:text name="listaPaquetes"></s:text></h2>
             <table>
             <s:iterator value="#session.listaPaquetes" var="paquete">
                 <tr>                  
