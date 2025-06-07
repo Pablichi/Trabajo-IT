@@ -109,7 +109,7 @@ public class crearPaqueteAction extends ActionSupport {
     
     public String execute() throws Exception {
         PaqueteTuristico paqueteT = new PaqueteTuristico();
-        
+        //Generamos un ID random y le sumamon uno para evitar que se pueda generar un id=0
         int idRandom = new Random().nextInt(1000000)+1;
         
         paqueteT.setId(idRandom);

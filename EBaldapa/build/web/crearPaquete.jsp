@@ -37,6 +37,5 @@
 
         <s:a action="listarPaquetes">Volver al listado</s:a>
             
-             <h5><a href="<s:url action=""></s:url>">Volver al inicio</a></h5>
     </body>
 </html>
