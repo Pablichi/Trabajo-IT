@@ -3,28 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearProveedor.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearReservaAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearReservaFormAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearDestinoFormAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminPaqueteIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/struts.xml</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearDestinoAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detallePaquete.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminReservaIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteFormAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearProveedorAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearProveedorFormAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/proveedores.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearDestino.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/modelo/Reserva.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteFormAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearReserva.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminValoracionesIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminDestinoIndex.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearDestino.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearCliente.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/bundle.properties</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearProveedor.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/adminDestinoIndex.jsp</file>
         </group>
     </open-files>
 </project-private>
