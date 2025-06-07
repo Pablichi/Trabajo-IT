@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-06-2025 a las 01:21:42
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Tiempo de generación: 08-06-2025 a las 00:39:00
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `aldapa`
 --
+CREATE DATABASE IF NOT EXISTS `aldapa` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `aldapa`;
 
 -- --------------------------------------------------------
 
@@ -62,8 +64,11 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id`, `nombre`, `email`, `telefono`, `direccion`, `id_cuenta`) VALUES
-(0, 'Pablo Falcón Rodríguez', 'pfalrod@alu.upo.es', 722564789, 'Calle Palangana Nº8', 0),
-(1, 'Daniel Sánchez-Matamoros Carmona', 'dsancar@alu.upo.es', 944856436, 'Calle Bruselas Nº3', 1);
+(0, 'Messi', 'jbsadejfhsjdfh', 1826, 'sihbjuhdf', 1),
+(27682, 'qweqwe', 'weqwe', 223523123, 'qdasdasd', 1),
+(81960, 'nbvhbgvj', 'sdfghjkl', 322345654, 'sihbjuhdf', 1),
+(251618, 'Messi', 'jbsadejfhsjdfh', 1826, 'sihbjuhdf', 2),
+(387561, 'Messi2', 'jbsadejfhsjdfh', 1826, 'sihbjuhdf', 1);
 
 -- --------------------------------------------------------
 
@@ -108,9 +113,7 @@ CREATE TABLE `destino` (
 --
 
 INSERT INTO `destino` (`id`, `nombre`, `pais`, `tipo`, `temporada`, `descripcion`) VALUES
-(0, 'Sevilla', 'España', 'Turismo', 'Verano', 'Capital de la comunidad autónoma de Andalucía, España'),
-(1, 'Roma', 'Italia', 'Turismo', 'Verano', 'Ciudad capital del país de Italia'),
-(2, 'Gran Canaria', 'España', 'Resort', 'Verano', 'Isla de la provincia de Las Palmas en las Islas Canarias, España');
+(1, 'Roma', 'Italia', 'Turismo', 'Verano', 'Ciudad capital del país de Italia');
 
 -- --------------------------------------------------------
 
@@ -132,9 +135,10 @@ CREATE TABLE `pago` (
 --
 
 INSERT INTO `pago` (`id`, `fecha_pago`, `total`, `metodo_pago`, `estado`, `id_reserva`) VALUES
-(0, '0000-00-00', 0, '', '', NULL),
-(1, '2025-06-04', 450, 'paypal', 'pagado', NULL),
-(2, '2025-06-02', 450, 'paypal', 'pagado', NULL);
+(87280, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 598834),
+(143186, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 462883),
+(654929, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 598834),
+(839944, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 598834);
 
 -- --------------------------------------------------------
 
@@ -159,9 +163,10 @@ CREATE TABLE `paquete_turistico` (
 --
 
 INSERT INTO `paquete_turistico` (`id`, `titulo`, `descripcion`, `fecha_salida`, `duracion`, `precio`, `servicios_incluidos`, `id_destino`, `id_proveedor`) VALUES
-(0, 'Turismo por la ciudad de Sevilla', '5 días de turismo por la ciudad de Sevilla para visitar todos sus monumentos y toda su historia', '2025-07-23', 5, 743, 'Alojamiento, Guía turístico', 0, 0),
-(1, 'Turismo por Roma', '5 días de turismo por la ciudad de Roma', '2025-06-15', 5, 800, 'Alojamiento, Visita guiada por los distintos monumentos de la  ciudad', 1, 1),
-(2, 'HD Parque Cristóbal Gran Canaria', '¿Buscas donde alojarte en Playa del Inglés? Entonces no te pierdas HD Parque Cristobal Gran Canaria,', '2025-05-18', 2, 157, 'Alojamiento y acceso a las actividades de las instalaciones, desayuno incluido', 2, 2);
+(263306, 'prueba', 'asdasda', '1239-09-04', 15, 2312, 'Maletas extras', 1, 890382),
+(385411, 'prueba', 'hgcghgh', '1239-09-04', 15, 60, 'Maletas extras', 1, 123123123),
+(881463, 'jghvhg', 'hgcghgh', '1239-09-04', 0, 60, 'Maletas extras', 1, 123123123),
+(990063, 'jghvhg', 'hgcghgh', '1239-09-04', 0, 60, 'Maletas extras', 1, 123123123);
 
 -- --------------------------------------------------------
 
@@ -179,14 +184,6 @@ CREATE TABLE `promocion` (
   `descripcion` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `id_paquete` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Volcado de datos para la tabla `promocion`
---
-
-INSERT INTO `promocion` (`id`, `nombre_promocion`, `tipo_descuento`, `valor_descuento`, `fecha_inicio`, `fecha_finalizacion`, `descripcion`, `id_paquete`) VALUES
-(0, 'black friday', 'porcentaje', 50, '2025-11-28', '2025-11-30', 'durante el ultimo fin de semana de noviembre se activarar un descuento del 50% con motivo del black ', 1),
-(2, 'descuento nuevos viajeros', 'valor fijo', 10, '2025-01-01', '2025-12-31', 'descuento correspondiente a nuevos usuarios', NULL);
 
 -- --------------------------------------------------------
 
@@ -208,9 +205,8 @@ CREATE TABLE `proveedor_servicios` (
 --
 
 INSERT INTO `proveedor_servicios` (`id`, `nombre_empresa`, `tipo_servicios`, `contacto`, `pais`, `comentarios_reputacion`) VALUES
-(0, 'Logitravel', 'Turismo', 'www.logitravel.com', 'España', ''),
-(1, 'Viajalia', 'Turismo', 'www.viajaliampg.es', 'España', ''),
-(2, 'Booking', 'Turismo, Resort', 'Booking.com', 'España', '');
+(890382, 'dsdasdasd', 'sdsdfsdfsd', 'sdsdv', 'sdvsdvsdv', 'sdvsdvsdvsdv'),
+(123123123, 'dasdasdas', 'asdasdasd', 'asdasdas', 'asdasdasd', 'sdasdasdas');
 
 -- --------------------------------------------------------
 
@@ -228,6 +224,16 @@ CREATE TABLE `reserva` (
   `id_paquete` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Volcado de datos para la tabla `reserva`
+--
+
+INSERT INTO `reserva` (`id`, `fecha_reserva`, `numero_personas`, `estado`, `precio_total`, `id_cliente`, `id_paquete`) VALUES
+(121233, '2025-06-04', 3, 'ascsdefgefr', 123122, 387561, 990063),
+(462883, '1234-11-25', 23, 'wefsaf', 123, NULL, 385411),
+(598834, '1233-12-25', 3, 'Prueba', 123, 27682, 385411),
+(939287, '3412-04-11', 34, 'sdfsdf', 34534, NULL, 881463);
+
 -- --------------------------------------------------------
 
 --
@@ -242,13 +248,6 @@ CREATE TABLE `valoracion` (
   `id_cliente` int(11) DEFAULT NULL,
   `id_paquete` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Volcado de datos para la tabla `valoracion`
---
-
-INSERT INTO `valoracion` (`id`, `puntuacion`, `comentario`, `fecha_publicacion`, `id_cliente`, `id_paquete`) VALUES
-(1, 7, 'muy bonito todo', '2025-05-05', 1, 2);
 
 --
 -- Índices para tablas volcadas

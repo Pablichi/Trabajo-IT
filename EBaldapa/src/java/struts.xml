@@ -116,6 +116,14 @@
             <result name="success">/pagos.jsp</result>
         </action>
         
+        <action name="crearPagoForm" class="Controller.crearPagoFormAction">
+            <result name="success">/crearPago.jsp</result>
+        </action>
+        
+        <action name="crearPago" class="Controller.crearPagoAction">
+            <result name="success">/pagos.jsp</result>
+        </action>
+        
         <!-- Reservas -->
         <action name="listarReservas" class="Controller.listarReservasAction">
             <result name="success">/adminReservaIndex.jsp</result>
