@@ -15,12 +15,12 @@
         <link rel="stylesheet" type="text/css" href="css/estiloListas.css">
     </head>
     <body>
-         <header>
+        <header>
             <s:a action="">Índice</s:a>
             <h1><s:text name="adminReservas">Reservas</s:text></h1>
-        </header>
-        
-        <h2><s:text name="listaReservas">Lista de Reservas</s:text></h2>
+            </header>
+
+            <h2><s:text name="listaReservas">Lista de Reservas</s:text></h2>
             <table>
             <s:iterator value="#session.listaReservas" var="reserva">
                 <tr>                  
@@ -32,8 +32,8 @@
                     </td>
                 </tr>
             </s:iterator>
-            </table>
-        <s:form action="nuevaReservaAction">
+        </table>
+        <s:form action="crearReservaForm">
             <s:submit value="Añadir nueva reserva" />
         </s:form>
     </body>
