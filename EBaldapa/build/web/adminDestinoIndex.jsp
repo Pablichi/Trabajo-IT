@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title><s:text name="tituloAdmin"/></title>
+        <title><s:text name="tituloAdminDestinos"/></title>
         <s:head/>
         <link rel="stylesheet" type="text/css" href="css/estiloListas.css">
 
@@ -21,7 +21,7 @@
     <body>
         <header>
             <s:a action="">Índice</s:a>
-            <h1><s:text name="tituloAdminDestinos"/></h1>
+            <h1><s:text name="adminDestinos"/></h1>
         </header>
 
         <h2><s:text name="listaDestinos"/></h2>
@@ -39,15 +39,7 @@
                 </tr>
             </s:iterator>
         </table>
-  
-        <div>
-            <s:form action="listarValoraciones">
-                <s:submit key="ver valoraciones" />
-            </s:form>
-        </div>  
-            <s:form action="listarPaquetes">
-                <s:submit key="ver paquetes" />
-            </s:form>
+
         </div>
     </body>
 </html>

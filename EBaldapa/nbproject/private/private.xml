@@ -4,14 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminReservaIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/eliminarProveedorAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detalleReservaAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteFormAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detalleCliente.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearCliente.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/pagos.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detalleProveedoresAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detalleDestino.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/index.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminPaqueteIndex.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/eliminarReservaAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminDestinoIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/modelo/PaqueteTuristico.java</file>
         </group>
     </open-files>
 </project-private>
