@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,12 +20,12 @@
 
         <s:form action="crearCliente">
             
-            <s:textfield key="nombre" name="nombre" />
-            <s:textfield key="email" name="email" />
-            <s:textfield key="telefono" name="telefono" />
-            <s:textfield key="direccion" name="direccion" />
+            <s:textfield key="nombre" name="nombreCliente" />
+            <s:textfield key="email" name="emailCliente" />
+            <s:textfield key="telefono" name="telefonoCliente" />
+            <s:textfield key="direccion" name="direccionCliente" />
 
-            <s:select  key="Cuenta" name="idCuenta" list="%{#session.listaCuentas}" listValue="nombre" listKey="id" headerKey=""/>
+            <s:select  key="Cuenta" name="idCuentaCliente" list="%{#session.listaCuentas}" listValue="usuario" listKey="id" headerKey=""/>
             
             <s:submit value="Crear cliente" />
         </s:form>

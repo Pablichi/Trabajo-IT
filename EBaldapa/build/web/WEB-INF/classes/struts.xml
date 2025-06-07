@@ -125,6 +125,14 @@
         <action name="eliminarCliente" class="Controller.eliminarClienteAction">
             <result name="success">/clientes.jsp</result>
         </action>
+        
+        <action name="crearClienteForm" class="Controller.crearClienteFormAction">
+            <result name="success">/crearCliente.jsp</result>
+        </action>
+        
+        <action name="crearCliente" class="Controller.crearClienteAction">
+            <result name="success">/clientes.jsp</result>
+        </action>
 
     </package>
 

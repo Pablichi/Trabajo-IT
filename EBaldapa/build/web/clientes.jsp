@@ -40,7 +40,9 @@
                 </tr>
             </s:iterator>
         </table>
-            
+            <s:form action="crearClienteForm">
+                <s:submit value="Crear nuevo cliente" />
+            </s:form>
         </div>
         
     </body>
