@@ -33,6 +33,10 @@
                 </tr>
             </s:iterator>
         </table>
+            
+            <s:form action="crearPagoForm">
+                <s:submit value="Crear nuevo pago" />
+            </s:form>
         </div>
 
     </body>
