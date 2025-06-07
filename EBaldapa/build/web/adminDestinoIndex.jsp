@@ -26,21 +26,23 @@
 
         <h2><s:text name="listaDestinos"/></h2>
         <div class="container">
-      
-        <table>
-            <s:iterator value="#session.listaDestinos" var="destino">  
-                <tr>                  
-                    <td>
-                        <s:a action="detalleDestino">
-                            <s:param name="idDestino" value="%{#destino.id}" />
-                            <s:property value="#destino.nombre" />
-                        </s:a>
-                    </td>
-                </tr>
-            </s:iterator>
-        </table>
 
+            <table>
+                <s:iterator value="#session.listaDestinos" var="destino">  
+                    <tr>                  
+                        <td>
+                            <s:a action="detalleDestino">
+                                <s:param name="idDestino" value="%{#destino.id}" />
+                                <s:property value="#destino.nombre" />
+                            </s:a>
+                        </td>
+                    </tr>
+                </s:iterator>
+            </table>
+            <s:form action="crearDestinoForm">
+                <s:submit value="Crear nuevo destino" />
+            </s:form>
         </div>
- 
+
     </body>
 </html>

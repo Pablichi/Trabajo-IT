@@ -30,7 +30,6 @@ public class crearClienteFormAction extends ActionSupport {
         };
         List <Cuenta> data = new ArrayList<Cuenta>();
         data = (List<Cuenta>) cuentaDAO.findAll_XML(genericType);
-        System.out.println(data);
         Map <String, Object> session = ActionContext.getContext().getSession();
         session.put("listaCuentas", data);
         

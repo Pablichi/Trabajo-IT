@@ -26,6 +26,14 @@
             <result name="success">/adminDestinoIndex.jsp</result>
         </action>
         
+        <action name="crearDestinoForm" class="Controller.crearDestinoFormAction">
+            <result name="success">/crearDestino.jsp</result>
+        </action>
+        
+        <action name="crearDestino" class="Controller.crearDestinoAction">
+            <result name="success">/adminDestinoIndex.jsp</result>
+        </action>
+        
         <!-- Valoraciones -->
         <action name="listarValoraciones" class="Controller.listarValoracionesAction">
             <result name="success">/adminValoracionesIndex.jsp</result>
