@@ -10,6 +10,7 @@ import WS.PaqueteTuristicoWS;
 import WS.ProveedorServiciosWS;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.validator.annotations.RequiredFieldValidator;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,13 +27,12 @@ import modelo.ProveedorServicios;
  */
 public class crearPaqueteAction extends ActionSupport {
     
-    private String descripcion;
-    private int duracion;
-    private String titulo;
-    private float precio;
-    private String fechaSalida;
-
-    private String ServiciosIncluidos;
+    private String descripcionPaquete;
+    private int duracionPaquete;
+    private String tituloPaquete;
+    private float precioPaquete;
+    private String fechaSalidaPaquete;
+    private String ServiciosIncluidosPaquete;
     
     private int idDestino;
     private int idProveedor;
@@ -40,15 +40,54 @@ public class crearPaqueteAction extends ActionSupport {
     private Destino destino;
     private ProveedorServicios proveedor;
 
-    public String getFechaSalida() {
-        return fechaSalida;
+    public String getDescripcionPaquete() {
+        return descripcionPaquete;
     }
 
-    public void setFechaSalida(String fechaSalida) {
-        this.fechaSalida = fechaSalida;
+    public void setDescripcionPaquete(String descripcionPaquete) {
+        this.descripcionPaquete = descripcionPaquete;
     }
 
+    public int getDuracionPaquete() {
+        return duracionPaquete;
+    }
 
+    public void setDuracionPaquete(int duracionPaquete) {
+        this.duracionPaquete = duracionPaquete;
+    }
+
+    public String getTituloPaquete() {
+        return tituloPaquete;
+    }
+
+    public void setTituloPaquete(String tituloPaquete) {
+        this.tituloPaquete = tituloPaquete;
+    }
+
+    public float getPrecioPaquete() {
+        return precioPaquete;
+    }
+
+    public void setPrecioPaquete(float precioPaquete) {
+        this.precioPaquete = precioPaquete;
+    }
+
+    public String getFechaSalidaPaquete() {
+        return fechaSalidaPaquete;
+    }
+
+    public void setFechaSalidaPaquete(String fechaSalidaPaquete) {
+        this.fechaSalidaPaquete = fechaSalidaPaquete;
+    }
+
+    public String getServiciosIncluidosPaquete() {
+        return ServiciosIncluidosPaquete;
+    }
+
+    public void setServiciosIncluidosPaquete(String ServiciosIncluidosPaquete) {
+        this.ServiciosIncluidosPaquete = ServiciosIncluidosPaquete;
+    }
+    
     public int getIdDestino() {
         return idDestino;
     }
@@ -63,38 +102,6 @@ public class crearPaqueteAction extends ActionSupport {
 
     public void setIdProveedor(int idProveedor) {
         this.idProveedor = idProveedor;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public int getDuracion() {
-        return duracion;
-    }
-
-    public void setDuracion(int duracion) {
-        this.duracion = duracion;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public float getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(float precio) {
-        this.precio = precio;
     }
 
     public Destino getDestino() {
@@ -112,15 +119,6 @@ public class crearPaqueteAction extends ActionSupport {
     public void setProveedor(ProveedorServicios proveedor) {
         this.proveedor = proveedor;
     }
-
-    public String getServiciosIncluidos() {
-        return ServiciosIncluidos;
-    }
-
-    public void setServiciosIncluidos(String ServiciosIncluidos) {
-        this.ServiciosIncluidos = ServiciosIncluidos;
-    }
-    
     
     public crearPaqueteAction() {
     }
@@ -133,20 +131,18 @@ public class crearPaqueteAction extends ActionSupport {
         idRandom = (int) Math.random();
         
         paqueteT.setId(idRandom);
-        paqueteT.setTitulo(titulo);
-        paqueteT.setDescripcion(descripcion);
-       
+        paqueteT.setTitulo(tituloPaquete);
+        paqueteT.setDescripcion(descripcionPaquete);
+    
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        Date fecha_parseada = format.parse(fechaSalida);
-        
-        //Date fecha_parseada = ("1987-05-27");
+        Date fecha_parseada = format.parse(fechaSalidaPaquete);
         
         paqueteT.setFechaSalida(fecha_parseada);
         
-        paqueteT.setDuracion(duracion);
-        paqueteT.setPrecio(precio);
+        paqueteT.setDuracion(duracionPaquete);
+        paqueteT.setPrecio(precioPaquete);
         
-        paqueteT.setServiciosIncluidos(ServiciosIncluidos);
+        paqueteT.setServiciosIncluidos(ServiciosIncluidosPaquete);
         
         PaqueteTuristicoWS paqueteTuristico = new PaqueteTuristicoWS();
         
@@ -186,5 +182,19 @@ public class crearPaqueteAction extends ActionSupport {
         
         return SUCCESS;
     }
+    
+        public void validate(){
+        
+            if(this.getPrecioPaquete()<50){
+                addFieldError("precioPaquete", getText("precioPaquete.error"));
+            }
+
+            if(this.getTituloPaquete().isEmpty())
+            {
+                addFieldError("tituloPaquete", getText("tituloPaquete.error"));
+            }
+        }
+    
+    
     
 }
