@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import javax.ws.rs.core.GenericType;
 import modelo.Destino;
 import modelo.PaqueteTuristico;
@@ -32,13 +33,11 @@ public class crearPaqueteAction extends ActionSupport {
     private String tituloPaquete;
     private float precioPaquete;
     private String fechaSalidaPaquete;
-    private String ServiciosIncluidosPaquete;
+    private String serviciosIncluidosPaquete;
     
     private int idDestino;
     private int idProveedor;
     
-    private Destino destino;
-    private ProveedorServicios proveedor;
 
     public String getDescripcionPaquete() {
         return descripcionPaquete;
@@ -81,11 +80,11 @@ public class crearPaqueteAction extends ActionSupport {
     }
 
     public String getServiciosIncluidosPaquete() {
-        return ServiciosIncluidosPaquete;
+        return serviciosIncluidosPaquete;
     }
 
-    public void setServiciosIncluidosPaquete(String ServiciosIncluidosPaquete) {
-        this.ServiciosIncluidosPaquete = ServiciosIncluidosPaquete;
+    public void setServiciosIncluidosPaquete(String serviciosIncluidosPaquete) {
+        this.serviciosIncluidosPaquete = serviciosIncluidosPaquete;
     }
     
     public int getIdDestino() {
@@ -104,31 +103,14 @@ public class crearPaqueteAction extends ActionSupport {
         this.idProveedor = idProveedor;
     }
 
-    public Destino getDestino() {
-        return destino;
-    }
-
-    public void setDestino(Destino destino) {
-        this.destino = destino;
-    }
-
-    public ProveedorServicios getProveedor() {
-        return proveedor;
-    }
-
-    public void setProveedor(ProveedorServicios proveedor) {
-        this.proveedor = proveedor;
-    }
     
     public crearPaqueteAction() {
     }
     
     public String execute() throws Exception {
-        
         PaqueteTuristico paqueteT = new PaqueteTuristico();
         
-        int idRandom;
-        idRandom = (int) Math.random();
+        int idRandom = new Random().nextInt(1000000)+1;
         
         paqueteT.setId(idRandom);
         paqueteT.setTitulo(tituloPaquete);
@@ -142,7 +124,7 @@ public class crearPaqueteAction extends ActionSupport {
         paqueteT.setDuracion(duracionPaquete);
         paqueteT.setPrecio(precioPaquete);
         
-        paqueteT.setServiciosIncluidos(ServiciosIncluidosPaquete);
+        paqueteT.setServiciosIncluidos(serviciosIncluidosPaquete);
         
         PaqueteTuristicoWS paqueteTuristico = new PaqueteTuristicoWS();
         
@@ -151,10 +133,8 @@ public class crearPaqueteAction extends ActionSupport {
         };
         Destino data = new Destino();
         data = (Destino) cliente.find_XML(genericType, Integer.toString(idDestino));     
-         
-        destino = data;
         
-        paqueteT.setIdDestino(destino);
+        paqueteT.setIdDestino(data);
         
         ProveedorServiciosWS ps = new ProveedorServiciosWS();
         GenericType<ProveedorServicios> genericType2 = new GenericType<ProveedorServicios>(){
@@ -162,10 +142,8 @@ public class crearPaqueteAction extends ActionSupport {
         ProveedorServicios data2 = new ProveedorServicios();
         data2 = (ProveedorServicios) ps.find_XML(genericType2, Integer.toString(idProveedor));     
          
-        proveedor = data2;
         
-        paqueteT.setIdProveedor(proveedor);
-        
+        paqueteT.setIdProveedor(data2);
         Object obj_paquete = paqueteT;
         paqueteTuristico.create_XML(obj_paquete);
         

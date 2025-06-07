@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminReservaIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteFormAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detalleCliente.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearCliente.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/pagos.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/clientes.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detalleDestino.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/index.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminPaqueteIndex.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/modelo/Cliente.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteFormAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/struts.xml</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
         </group>
     </open-files>
