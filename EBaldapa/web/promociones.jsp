@@ -34,6 +34,9 @@
                 </tr>
             </s:iterator>
         </table>
+            <s:form action="crearPromocionForm">
+                <s:submit value="Crear nueva promocion" />
+            </s:form>
         </div>
         
     </body>
