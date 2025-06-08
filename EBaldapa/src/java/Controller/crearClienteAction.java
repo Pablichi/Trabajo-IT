@@ -112,4 +112,24 @@ public class crearClienteAction extends ActionSupport {
         return SUCCESS;
     }
     
+    public void validate(){
+        
+            if(String.valueOf(this.getTelefonoCliente()).length()>9){
+                addFieldError("telefonoCliente", getText("telefonoCliente.error"));
+            }
+            
+            if(this.getNombreCliente().isEmpty()){
+                addFieldError("nombreCliente", getText("nombreClienteVacio.error"));
+            }
+            
+            if(this.getEmailCliente().isEmpty()){
+                addFieldError("emailCliente", getText("emailClienteVacio.error"));
+            }
+            
+            else if(!this.emailCliente.matches("^[\\\\w.-]+@[a-zA-Z\\\\d.-]+\\\\.[a-zA-Z]{2,}$")){
+                addFieldError("emailCliente", getText("emailCliente.error"));
+            }
+                        
+        }
+    
 }

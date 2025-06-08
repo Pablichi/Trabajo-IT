@@ -32,6 +32,7 @@
         
         <action name="crearDestino" class="Controller.crearDestinoAction">
             <result name="success">/adminDestinoIndex.jsp</result>
+            <result name="input">/crearDestino.jsp</result>
         </action>
         
         <!-- Valoraciones -->
@@ -180,6 +181,7 @@
         
         <action name="crearCliente" class="Controller.crearClienteAction">
             <result name="success">/clientes.jsp</result>
+            <result name="input">/crearCliente.jsp</result>
         </action>
 
     </package>

@@ -102,4 +102,11 @@ public class crearDestinoAction extends ActionSupport {
         return SUCCESS;
     }
     
+    public void validate(){
+        if(this.getNombreDestino().isEmpty()){
+            addFieldError("nombreDestino", getText("nombreDestinoVacio.error"));
+        }
+      
+    }
+    
 }
