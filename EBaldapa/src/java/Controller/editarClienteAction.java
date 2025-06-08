@@ -35,8 +35,6 @@ public class editarClienteAction extends ActionSupport {
     private int idCuentaCliente;
     
     private int idCliente;
- 
-    private Cliente cliente;
 
     public int getIdCliente() {
         return idCliente;
@@ -94,12 +92,13 @@ public class editarClienteAction extends ActionSupport {
         
         Cliente clienteT = new Cliente();
         
+        clienteT.setId(idCliente);
         clienteT.setNombre(nombreCliente);
         clienteT.setEmail(emailCliente);
         clienteT.setTelefono(telefonoCliente);
         clienteT.setDireccion(direccionCliente);
         
-        ClienteWS clientews = new ClienteWS();
+        ClienteWS clienteDAO = new ClienteWS();
         
         CuentaWS cuentaws = new CuentaWS();
                 GenericType<Cuenta> genericType = new GenericType<Cuenta>(){
@@ -108,9 +107,15 @@ public class editarClienteAction extends ActionSupport {
         data = (Cuenta) cuentaws.find_XML(genericType, Integer.toString(idCuentaCliente));     
          
         clienteT.setIdCuenta(data);
-
         Object obj_paquete = clienteT;
-        clientews.edit_XML(obj_paquete, Integer.toString(idCliente));
+        System.out.println(this.direccionCliente);
+        System.out.println(this.emailCliente);
+        System.out.println(this.idCliente);
+        System.out.println(this.idCuentaCliente);
+        System.out.println(this.nombreCliente);
+        System.out.println(this.telefonoCliente);
+        
+        clienteDAO.edit_XML(obj_paquete, Integer.toString(idCliente));
         
         ClienteWS clienteListado = new ClienteWS();
         GenericType<List<Cliente>> genericTypeListado = new GenericType<List<Cliente>>(){

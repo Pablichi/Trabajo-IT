@@ -21,11 +21,11 @@
             </header>
 
         <s:form action="editarCliente">
-            
-            <s:textfield key="Nombre" name="nombreCliente" /><s:property value="%{cliente.nombre}"/>
-            <s:textfield key="Email" name="emailCliente" /><s:property value="%{cliente.email}"/>
-            <s:textfield key="Telefono" name="telefonoCliente" /><s:property value="%{cliente.telefono}"/>
-            <s:textfield key="Direccion" name="direccionCliente" /> <s:property value="%{cliente.direccion}"/>
+            <s:hidden name="idCliente" value="%{cliente.id}" />
+            <s:textfield key="Nombre" name="nombreCliente" value="%{cliente.nombre}"/>
+            <s:textfield key="Email" name="emailCliente" value="%{cliente.email}"/>
+            <s:textfield key="Telefono" name="telefonoCliente" value="%{cliente.telefono}"/>
+            <s:textfield key="Direccion" name="direccionCliente" value="%{cliente.direccion}"/>
 
             <s:select  key="Cuenta" name="idCuentaCliente" list="%{#session.listaCuentas}" listValue="usuario" listKey="id" headerKey=""/>
     
