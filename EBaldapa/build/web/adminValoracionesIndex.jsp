@@ -36,6 +36,12 @@
                             <s:property value="#valoracion.puntuacion" />
                         </s:a>
                     </td>
+                    
+                    <td>
+                        <s:a action="editarValoracionForm">
+                            <s:param name="idValoracion" value="%{#valoracion.id}" />Editar valoracion
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>

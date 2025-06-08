@@ -30,7 +30,14 @@
                             <s:param name="idPromocion" value="%{#promocion.id}" />
                             <s:property value="#promocion.nombrePromocion" />
                         </s:a>
-                    </td>                     
+                    </td>   
+                    
+                    
+                    <td>
+                        <s:a action="editarPromocionForm">
+                            <s:param name="idPromocion" value="%{#promocion.id}" />Editar promocion
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>

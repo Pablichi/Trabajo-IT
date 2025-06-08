@@ -30,7 +30,13 @@
                             <s:param name="idProveedor" value="%{#proveedor.id}" />
                             <s:property value="#proveedor.nombreEmpresa" />
                         </s:a>
-                    </td>                     
+                    </td>  
+                    
+                    <td>
+                        <s:a action="editarProveedorForm">
+                            <s:param name="idProveedor" value="%{#proveedor.id}" />Editar proveedor
+                        </s:a>
+                    </td>
     
                 </tr>
             </s:iterator>

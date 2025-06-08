@@ -65,6 +65,15 @@
             <result name="success">/adminValoracionesIndex.jsp</result>
         </action>
         
+        <action name="editarValoracionForm" class="Controller.detalleValoracionAction">
+            <result name="success">/editarValoracion.jsp</result>
+        </action>
+        
+        <action name="editarValoracion" class="Controller.editarValoracionAction">
+            <result name="success">/adminValoracionesIndex.jsp</result>
+            <result name="input">/editarValoracion.jsp</result>
+        </action>
+        
         <!-- Paquetes  -->
         <action name="listarPaquetes" class="Controller.listarPaquetesAction">
             <result name="success">/adminPaqueteIndex.jsp</result>
@@ -117,6 +126,15 @@
             <result name="success">/proveedores.jsp</result>
         </action>
         
+        <action name="editarProveedorForm" class="Controller.detalleProveedoresAction">
+            <result name="success">/editarProveedor.jsp</result>
+        </action>
+        
+        <action name="editarProveedor" class="Controller.editarProveedorAction">
+            <result name="success">/proveedores.jsp</result>
+            <result name="input">/editarProveedor.jsp</result>
+        </action>
+        
         <!-- Promociones -->
         <action name="listarPromociones" class="Controller.listarPromocionesAction">
             <result name="success">/promociones.jsp</result>
@@ -136,6 +154,15 @@
         
         <action name="crearPromocion" class="Controller.crearPromocionAction">
             <result name="success">/promociones.jsp</result>
+        </action>
+        
+        <action name="editarPromocionForm" class="Controller.detallePromocionAction">
+            <result name="success">/editarPromocion.jsp</result>
+        </action>
+        
+        <action name="editarPromocion" class="Controller.editarPromocionAction">
+            <result name="success">/promociones.jsp</result>
+            <result name="input">/editarPromocion.jsp</result>
         </action>
         
         <!-- Pagos -->
@@ -159,6 +186,15 @@
             <result name="success">/pagos.jsp</result>
         </action>
         
+        <action name="editarPagoForm" class="Controller.detallePagoAction">
+            <result name="success">/editarPago.jsp</result>
+        </action>
+        
+        <action name="editarPago" class="Controller.editarPagoAction">
+            <result name="success">/pagos.jsp</result>
+            <result name="input">/editarPago.jsp</result>
+        </action>
+        
         <!-- Reservas -->
         <action name="listarReservas" class="Controller.listarReservasAction">
             <result name="success">/adminReservaIndex.jsp</result>
@@ -178,6 +214,15 @@
         
         <action name="crearReserva" class="Controller.crearReservaAction">
             <result name="success">/adminReservaIndex.jsp</result>
+        </action>
+        
+        <action name="editarReservaForm" class="Controller.detalleReservaAction">
+            <result name="success">/editarReserva.jsp</result>
+        </action>
+        
+        <action name="editarReserva" class="Controller.editarReservaAction">
+            <result name="success">/adminReservaIndex.jsp</result>
+            <result name="input">/editarReserva.jsp</result>
         </action>
         
         <!-- Clientes -->
