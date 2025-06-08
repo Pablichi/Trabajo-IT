@@ -111,12 +111,6 @@ public class crearValoracionAction extends ActionSupport {
          
         
         valoracionT.setIdPaquete(data2);
-        System.out.println(valoracionT.getFechaPublicacion());
-        System.out.println(valoracionT.getComentario());
-        System.out.println(valoracionT.getId());
-        System.out.println(valoracionT.getIdCliente());
-        System.out.println(valoracionT.getIdPaquete());
-        System.out.println(valoracionT.getPuntuacion());
         Object obj_paquete = valoracionT;
         valoracionDAO.create_XML(obj_paquete);
         
