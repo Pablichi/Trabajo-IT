@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-06-2025 a las 00:39:00
+-- Tiempo de generación: 08-06-2025 a las 21:17:45
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -37,13 +37,6 @@ CREATE TABLE `administrador` (
   `id_cuenta` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
---
--- Volcado de datos para la tabla `administrador`
---
-
-INSERT INTO `administrador` (`id`, `nombre_usuario`, `email`, `rol_permisos`, `id_cuenta`) VALUES
-(1, 'Jose Francisco Torres Maldonado', 'jftormal@upo.es', 'CRUD', 2);
-
 -- --------------------------------------------------------
 
 --
@@ -64,11 +57,9 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id`, `nombre`, `email`, `telefono`, `direccion`, `id_cuenta`) VALUES
-(0, 'Messi', 'jbsadejfhsjdfh', 1826, 'sihbjuhdf', 1),
-(27682, 'qweqwe', 'weqwe', 223523123, 'qdasdasd', 1),
-(81960, 'nbvhbgvj', 'sdfghjkl', 322345654, 'sihbjuhdf', 1),
-(251618, 'Messi', 'jbsadejfhsjdfh', 1826, 'sihbjuhdf', 2),
-(387561, 'Messi2', 'jbsadejfhsjdfh', 1826, 'sihbjuhdf', 1);
+(4, 'Pablo Falcón Rodríguez', 'pfalrod@alu.upo.es', 722518338, 'Plaza San José Nº2, Bajo A', 1),
+(5, 'Jose Francisco Torres Maldonado', 'jftormal@upo.es', 782436144, 'Calle Bruselas Nº3, 1ºD', 2),
+(6, 'Daniel Sánchez-Matamoros Carmona', 'dsancar@alu.upo.es', 442564732, 'Calle Europa, Nº5, 3ºC', 1);
 
 -- --------------------------------------------------------
 
@@ -89,9 +80,9 @@ CREATE TABLE `cuenta` (
 --
 
 INSERT INTO `cuenta` (`id`, `usuario`, `password`, `ultimo_acceso`, `estado`) VALUES
-(0, 'Pablichi', 'PitiPata@#', '2025-05-05', 'Activo'),
 (1, 'Danilo', 'PotiPate678', '2025-05-01', 'Activo'),
-(2, 'jftormal', 'jft0rma1~~#', '2025-05-07', 'Activo');
+(2, 'jftormal', 'jft0rma1~~#', '2025-05-07', 'Activo'),
+(3, 'Pablichi', 'Pab10&$44', '2025-06-06', 'Activa');
 
 -- --------------------------------------------------------
 
@@ -113,7 +104,9 @@ CREATE TABLE `destino` (
 --
 
 INSERT INTO `destino` (`id`, `nombre`, `pais`, `tipo`, `temporada`, `descripcion`) VALUES
-(1, 'Roma', 'Italia', 'Turismo', 'Verano', 'Ciudad capital del país de Italia');
+(1, 'Roma', 'Italia', 'Turismo', 'Verano', 'Ciudad capital del país de Italia'),
+(2, 'París', 'Francia', 'Turismo urbano', 'Verano', 'Capital del país de Francia, conocida por su cultura, historia y monumentos'),
+(306128, 'Marbella', 'España', 'Turismo costero', 'Verano', 'Ciudad de la costa Sur de España conocida por sus grandes playas');
 
 -- --------------------------------------------------------
 
@@ -135,10 +128,9 @@ CREATE TABLE `pago` (
 --
 
 INSERT INTO `pago` (`id`, `fecha_pago`, `total`, `metodo_pago`, `estado`, `id_reserva`) VALUES
-(87280, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 598834),
-(143186, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 462883),
-(654929, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 598834),
-(839944, '1233-12-25', 21231, 'Pago en efectivo', 'Pagado', 598834);
+(1, '1233-12-04', 1200, 'Pago en efectivo', 'Pagado', 3),
+(2, '1233-12-11', 1000, 'Pago en efectivo', 'Pagado', 5),
+(3, '1233-12-25', 1300, 'Pago con tarjeta', 'Pagado', 4);
 
 -- --------------------------------------------------------
 
@@ -163,10 +155,9 @@ CREATE TABLE `paquete_turistico` (
 --
 
 INSERT INTO `paquete_turistico` (`id`, `titulo`, `descripcion`, `fecha_salida`, `duracion`, `precio`, `servicios_incluidos`, `id_destino`, `id_proveedor`) VALUES
-(263306, 'prueba', 'asdasda', '1239-09-04', 15, 2312, 'Maletas extras', 1, 890382),
-(385411, 'prueba', 'hgcghgh', '1239-09-04', 15, 60, 'Maletas extras', 1, 123123123),
-(881463, 'jghvhg', 'hgcghgh', '1239-09-04', 0, 60, 'Maletas extras', 1, 123123123),
-(990063, 'jghvhg', 'hgcghgh', '1239-09-04', 0, 60, 'Maletas extras', 1, 123123123);
+(3, 'Turismo por Roma', '1 semana de turismo por la ciudad de Roma, capital de Italia para disfrutar de sus monumentos y su i', '2025-06-13', 4, 600, 'Maletas extra', 1, 3),
+(4, 'Turismo por París', 'Un viaje turístico de una semana por la ciudad de París para empaparte de su sociedad, cultura e his', '2025-06-04', 7, 500, 'Recogida en aeropuerto', 2, 1),
+(5, 'Resort en Marbella', '5 días en uno de los mejores Resorts de Marbella', '2025-06-04', 5, 400, 'Maletas Extra', 306128, 2);
 
 -- --------------------------------------------------------
 
@@ -184,6 +175,14 @@ CREATE TABLE `promocion` (
   `descripcion` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `id_paquete` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Volcado de datos para la tabla `promocion`
+--
+
+INSERT INTO `promocion` (`id`, `nombre_promocion`, `tipo_descuento`, `valor_descuento`, `fecha_inicio`, `fecha_finalizacion`, `descripcion`, `id_paquete`) VALUES
+(1, 'Descuento por familiar', 'Porcentaje', 20, '2025-06-01', '2025-06-30', 'Por cada familiar recibirás un 15% de descuento, hasta un máximo de 3', 5),
+(2, 'Descuento por niños', 'Porcentaje', 30, '2025-06-01', '2025-06-30', 'Para los niños menores de 16 años se aplicará un descuento del 30%', 3);
 
 -- --------------------------------------------------------
 
@@ -205,8 +204,9 @@ CREATE TABLE `proveedor_servicios` (
 --
 
 INSERT INTO `proveedor_servicios` (`id`, `nombre_empresa`, `tipo_servicios`, `contacto`, `pais`, `comentarios_reputacion`) VALUES
-(890382, 'dsdasdasd', 'sdsdfsdfsd', 'sdsdv', 'sdvsdvsdv', 'sdvsdvsdvsdv'),
-(123123123, 'dasdasdas', 'asdasdasd', 'asdasdas', 'asdasdasd', 'sdasdasdas');
+(1, 'Viajalia', 'Ocio', 'https://viajaliampg.es/', 'España', 'Buen trato al cliente'),
+(2, 'LogiTravel', 'Alojamiento', 'www.logitravel.com', 'España', 'Buen trato con el cliente'),
+(3, 'Trivago', 'Alojamiento', 'www.trivago.com', 'España', 'Buen trato con el cliente, Rapidez de procesos de búsqueda.');
 
 -- --------------------------------------------------------
 
@@ -229,10 +229,9 @@ CREATE TABLE `reserva` (
 --
 
 INSERT INTO `reserva` (`id`, `fecha_reserva`, `numero_personas`, `estado`, `precio_total`, `id_cliente`, `id_paquete`) VALUES
-(121233, '2025-06-04', 3, 'ascsdefgefr', 123122, 387561, 990063),
-(462883, '1234-11-25', 23, 'wefsaf', 123, NULL, 385411),
-(598834, '1233-12-25', 3, 'Prueba', 123, 27682, 385411),
-(939287, '3412-04-11', 34, 'sdfsdf', 34534, NULL, 881463);
+(3, '2025-06-12', 2, 'Pagada', 1200, 5, 3),
+(4, '2025-06-11', 4, 'Pagada', 1300, 4, 5),
+(5, '2025-06-18', 2, 'Pagada', 1000, 6, 4);
 
 -- --------------------------------------------------------
 
@@ -248,6 +247,15 @@ CREATE TABLE `valoracion` (
   `id_cliente` int(11) DEFAULT NULL,
   `id_paquete` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Volcado de datos para la tabla `valoracion`
+--
+
+INSERT INTO `valoracion` (`id`, `puntuacion`, `comentario`, `fecha_publicacion`, `id_cliente`, `id_paquete`) VALUES
+(1, 4, 'Muy buena experiencia', '2025-06-30', 4, 5),
+(2, 1, 'Experiencia pésima', '2025-06-30', 5, 3),
+(3, 5, 'Experiencia increíble, confianza absoluta en la compañía proveedora', '2025-06-30', 6, 4);
 
 --
 -- Índices para tablas volcadas
