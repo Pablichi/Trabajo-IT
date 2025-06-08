@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <s:head/>
         <link rel="stylesheet" type="text/css" href="css/estiloDetalle.css">
     </head>
     <body>
@@ -21,10 +22,10 @@
 
         <s:form action="crearCliente">
             
-            <s:textfield key="nombre" name="nombreCliente" />
-            <s:textfield key="email" name="emailCliente" />
-            <s:textfield key="telefono" name="telefonoCliente" />
-            <s:textfield key="direccion" name="direccionCliente" />
+            <s:textfield key="Nombre" name="nombreCliente" />
+            <s:textfield key="Email" name="emailCliente" />
+            <s:textfield key="Telefono" name="telefonoCliente" />
+            <s:textfield key="Direccion" name="direccionCliente" />
 
             <s:select  key="Cuenta" name="idCuentaCliente" list="%{#session.listaCuentas}" listValue="usuario" listKey="id" headerKey=""/>
             

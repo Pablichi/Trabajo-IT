@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <s:head/>
         <link rel="stylesheet" type="text/css" href="css/estiloDetalle.css">
     </head>
     <body>
@@ -21,11 +22,11 @@
 
         <s:form action="crearDestino">
             
-            <s:textfield key="nombre" name="nombreDestino" />
-            <s:textfield key="pais" name="paisDestino" />
-            <s:textfield key="descripcion" name="descripcionDestino" />
-            <s:radio key="tipo" name="tipoDestino" list="{'Turismo urbano', 'Turismo costero', 'Turismo de montaña'}" />
-            <s:radio key="temporada" name="temporadaDestino" list="{'Verano', 'Invierno'}" />
+            <s:textfield key="Nombre" name="nombreDestino" />
+            <s:textfield key="Pais" name="paisDestino" />
+            <s:textfield key="Descripcion" name="descripcionDestino" />
+            <s:radio key="Tipo" name="tipoDestino" list="{'Turismo urbano', 'Turismo costero', 'Turismo de montaña'}" />
+            <s:radio key="Temporada" name="temporadaDestino" list="{'Verano', 'Invierno'}" />
             
 
             <s:submit value="Crear Destino" />

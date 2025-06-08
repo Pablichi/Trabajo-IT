@@ -22,7 +22,7 @@
         <s:form action="crearReserva">
             
             <s:textfield key="Numero de personas" name="personasReserva" />
-            <s:textfield key="estado" name="estadoReserva" />
+            <s:textfield key="Estado" name="estadoReserva" />
             <s:textfield key="Precio Total" name="precioReserva" />
             <s:textfield key="Fecha de Reserva" name="fechaReserva" />
             

@@ -22,12 +22,12 @@
 
         <s:form action="crearPaquete">
             
-            <s:textfield key="titulo" name="tituloPaquete" />
-            <s:textfield key="descripcion" name="descripcionPaquete" />
-            <s:textfield key="precio" name="precioPaquete" />
-            <s:textfield key="fechaSalida" name="fechaSalidaPaquete" />
-            <s:radio key="duracion" name="duracionPaquete" list="{'15', '7', '3'}" />
-            <s:radio key="ServiciosIncluidos" name="serviciosIncluidosPaquete" list="{'Recogida en aeropuerto', 'Maletas extras'}" />
+            <s:textfield key="Titulo" name="tituloPaquete" />
+            <s:textfield key="Descripcion" name="descripcionPaquete" />
+            <s:textfield key="Precio" name="precioPaquete" />
+            <s:textfield key="Fecha de salida" name="fechaSalidaPaquete" />
+            <s:radio key="Duracion" name="duracionPaquete" list="{'15', '7', '3'}" />
+            <s:radio key="Servicios incluidos" name="serviciosIncluidosPaquete" list="{'Recogida en aeropuerto', 'Maletas extras'}" />
             
             <s:select  key="Destino" name="idDestino" list="%{#session.listaDestinos}" listValue="nombre" listKey="id" headerKey=""/>
             <s:select  key="Proveedor" name="idProveedor" list="%{#session.listaProveedores}" listValue="nombreEmpresa" listKey="id" headerKey="" />
