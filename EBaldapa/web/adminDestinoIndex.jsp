@@ -36,6 +36,12 @@
                                 <s:property value="#destino.nombre" />
                             </s:a>
                         </td>
+                        
+                        <td>
+                        <s:a action="editarDestinoForm">
+                            <s:param name="idDestino" value="%{#destino.id}" />Editar destino
+                        </s:a>
+                    </td>
                     </tr>
                 </s:iterator>
             </table>
