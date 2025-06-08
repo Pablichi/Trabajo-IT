@@ -124,13 +124,7 @@ public class crearPromocionAction extends ActionSupport {
          
 
         promocionT.setIdPaquete(data);
-        /*
-        System.out.println(promocionT.getNombrePromocion());
-        System.out.println(promocionT.getTipoDescuento());
-        System.out.println(promocionT.getValorDescuento());
-        System.out.println(promocionT.getFechaInicio());
-        System.out.println(promocionT.getFechaFinalizacion());
-        */
+
         Object obj_paquete = promocionT;
         promocionDAO.create_XML(obj_paquete);
         

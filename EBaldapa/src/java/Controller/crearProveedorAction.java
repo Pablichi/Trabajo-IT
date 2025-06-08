@@ -89,7 +89,6 @@ public class crearProveedorAction extends ActionSupport {
         proveedorDAO.create_XML(obj_paquete);
         
         
-        //ProveedorServiciosWS destinoListado = new ProveedorServiciosWS();
         GenericType<List<ProveedorServicios>> genericTypeListado = new GenericType<List<ProveedorServicios>>(){
         };
         List <ProveedorServicios> dataListado = new ArrayList<ProveedorServicios>();
