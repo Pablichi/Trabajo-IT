@@ -17,10 +17,10 @@
     <body>
         <header>
             <s:a action="">Índice</s:a>
-            <h1><s:text name="adminReservas">Reservas</s:text></h1>
+            <h1><s:text name="adminReservas"></s:text></h1>
             </header>
 
-            <h2><s:text name="listaReservas">Lista de Reservas</s:text></h2>
+            <h2><s:text name="listaReservas"></s:text></h2>
             <table>
             <s:iterator value="#session.listaReservas" var="reserva">
                 <tr>                  
