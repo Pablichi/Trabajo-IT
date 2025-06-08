@@ -87,6 +87,15 @@
             <result name="input">/crearPaquete.jsp</result>
         </action>
         
+        <action name="editarPaqueteForm" class="Controller.detallePaqueteAction">
+            <result name="success">/editarPaquete.jsp</result>
+        </action>
+        
+        <action name="editarPaquete" class="Controller.editarPaqueteAction">
+            <result name="success">/adminPaqueteIndex.jsp</result>
+            <result name="input">/editarPaquete.jsp</result>
+        </action>
+        
         <!-- Proveedores -->
         <action name="listarProveedores" class="Controller.listarProveedorAction">
             <result name="success">/proveedores.jsp</result>

@@ -108,12 +108,6 @@ public class editarClienteAction extends ActionSupport {
          
         clienteT.setIdCuenta(data);
         Object obj_paquete = clienteT;
-        System.out.println(this.direccionCliente);
-        System.out.println(this.emailCliente);
-        System.out.println(this.idCliente);
-        System.out.println(this.idCuentaCliente);
-        System.out.println(this.nombreCliente);
-        System.out.println(this.telefonoCliente);
         
         clienteDAO.edit_XML(obj_paquete, Integer.toString(idCliente));
         

@@ -94,12 +94,6 @@ public class editarDestinoAction extends ActionSupport {
              
          
         Object obj_paquete = destinoT;
-        System.out.println(this.descripcionDestino);
-        System.out.println(this.idDestino);
-        System.out.println(this.paisDestino);
-        System.out.println(this.temporadaDestino);
-        System.out.println(this.tipoDestino);
-        System.out.println(this.nombreDestino);
         
         destinoDAO.edit_XML(obj_paquete, Integer.toString(idDestino));
         

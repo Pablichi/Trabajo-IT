@@ -30,6 +30,12 @@
                             <s:property value="#paquete.titulo" />
                         </s:a>
                     </td>
+                    
+                    <td>
+                        <s:a action="editarPaqueteForm">
+                            <s:param name="idPaquete" value="%{#paquete.id}" />Editar paquete
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>
