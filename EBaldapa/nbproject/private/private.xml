@@ -3,33 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/editarClienteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearReservaAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detalleClienteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/index.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminPaqueteIndex.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/struts.xml</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearDestinoAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detalleValoracion.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/cargaInicialAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearDestino.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/editarDestino.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/modelo/Destino.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearValoracionAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/editarPaqueteAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPromocion.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/editarDestinoAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPromocionAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearProveedorAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/clientes.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/editarPaquete.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPagoAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/editarCliente.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteFormAction.java</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
-            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminDestinoIndex.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearValoracion.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/editarClienteAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearProveedor.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/detalleClienteAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detalleCliente.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/adminValoracionesIndex.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearPromocion.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearReserva.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/detalleDestino.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearPago.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearDestino.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/clientes.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/crearCliente.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/bundle.properties</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/struts.xml</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/cargaInicialAction.java</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/web/editarCliente.jsp</file>
+            <file>file:/C:/Users/danis/OneDrive/Desktop/Dani/IT/trabajoIT/Trabajo-IT/git/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteAction.java</file>
         </group>
     </open-files>
 </project-private>
