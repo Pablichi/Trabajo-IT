@@ -147,6 +147,15 @@
             <result name="success">/promociones.jsp</result>
         </action>
         
+        <action name="editarPromocionForm" class="Controller.detallePromocionAction">
+            <result name="success">/editarPromocion.jsp</result>
+        </action>
+        
+        <action name="editarPromocion" class="Controller.editarPromocionAction">
+            <result name="success">/promociones.jsp</result>
+            <result name="input">/editarPromocion.jsp</result>
+        </action>
+        
         <!-- Pagos -->
         <action name="listarPagos" class="Controller.listarPagosAction">
             <result name="success">/pagos.jsp</result>
