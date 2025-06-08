@@ -117,6 +117,15 @@
             <result name="success">/proveedores.jsp</result>
         </action>
         
+        <action name="editarProveedorForm" class="Controller.detalleProveedoresAction">
+            <result name="success">/editarProveedor.jsp</result>
+        </action>
+        
+        <action name="editarProveedor" class="Controller.editarProveedorAction">
+            <result name="success">/proveedores.jsp</result>
+            <result name="input">/editarProveedor.jsp</result>
+        </action>
+        
         <!-- Promociones -->
         <action name="listarPromociones" class="Controller.listarPromocionesAction">
             <result name="success">/promociones.jsp</result>

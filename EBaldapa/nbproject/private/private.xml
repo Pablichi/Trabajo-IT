@@ -4,6 +4,7 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/editarClienteAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearProveedor.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearReservaAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detalleClienteAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/index.jsp</file>
@@ -16,19 +17,28 @@
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPaqueteAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearDestino.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/editarDestino.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/editarProveedor.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/modelo/Destino.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearValoracionAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/editarPaqueteAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detallePaqueteAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPromocion.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/editarDestinoAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPromocionAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detallePromocion.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/detallePaquete.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminReservaIndex.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearProveedorAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/proveedores.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/clientes.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/editarPaquete.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/detallePagoAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearPagoAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/editarCliente.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/crearClienteFormAction.java</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/src/java/Controller/editarProveedorAction.java</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/crearPaquete.jsp</file>
+            <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminValoracionesIndex.jsp</file>
             <file>file:/C:/Users/pabli/Documents/GitHub/Trabajo-IT/EBaldapa/web/adminDestinoIndex.jsp</file>
         </group>
     </open-files>
