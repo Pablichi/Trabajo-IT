@@ -189,6 +189,15 @@
             <result name="success">/adminReservaIndex.jsp</result>
         </action>
         
+        <action name="editarReservaForm" class="Controller.detalleReservaAction">
+            <result name="success">/editarReserva.jsp</result>
+        </action>
+        
+        <action name="editarReserva" class="Controller.editarReservaAction">
+            <result name="success">/adminReservaIndex.jsp</result>
+            <result name="input">/editarReserva.jsp</result>
+        </action>
+        
         <!-- Clientes -->
         <action name="listarClientes" class="Controller.listarClientesAction">
             <result name="success">/clientes.jsp</result>

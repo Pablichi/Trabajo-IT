@@ -8,14 +8,15 @@ package Controller;
 import WS.ClienteWS;
 import WS.PaqueteTuristicoWS;
 import WS.ReservaWS;
+import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import java.util.Date;
-import java.util.Random;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import javax.ws.rs.core.GenericType;
 import modelo.Cliente;
 import modelo.PaqueteTuristico;
@@ -25,15 +26,24 @@ import modelo.Reserva;
  *
  * @author pabli
  */
-public class crearReservaAction extends ActionSupport {
+public class editarReservaAction extends ActionSupport {
     
+    private int idReserva;
     private int personasReserva;
-    private String fechaReserva;
     private String estadoReserva;
-    private int precioReserva;
+    private float precioReserva;
+    private String fechaReserva;
     
     private int idCliente;
     private int idPaquete;
+
+    public int getIdReserva() {
+        return idReserva;
+    }
+
+    public void setIdReserva(int idReserva) {
+        this.idReserva = idReserva;
+    }
 
     public int getPersonasReserva() {
         return personasReserva;
@@ -41,14 +51,6 @@ public class crearReservaAction extends ActionSupport {
 
     public void setPersonasReserva(int personasReserva) {
         this.personasReserva = personasReserva;
-    }
-
-    public String getFechaReserva() {
-        return fechaReserva;
-    }
-
-    public void setFechaReserva(String fechaReserva) {
-        this.fechaReserva = fechaReserva;
     }
 
     public String getEstadoReserva() {
@@ -59,12 +61,20 @@ public class crearReservaAction extends ActionSupport {
         this.estadoReserva = estadoReserva;
     }
 
-    public int getPrecioReserva() {
+    public float getPrecioReserva() {
         return precioReserva;
     }
 
-    public void setPrecioReserva(int precioReserva) {
+    public void setPrecioReserva(float precioReserva) {
         this.precioReserva = precioReserva;
+    }
+
+    public String getFechaReserva() {
+        return fechaReserva;
+    }
+
+    public void setFechaReserva(String fechaReserva) {
+        this.fechaReserva = fechaReserva;
     }
 
     public int getIdCliente() {
@@ -85,17 +95,13 @@ public class crearReservaAction extends ActionSupport {
     
     
     
-    
-    
-    public crearReservaAction() {
+    public editarReservaAction() {
     }
     
     public String execute() throws Exception {
         Reserva reservaT = new Reserva();
         
-        int idRandom = new Random().nextInt(1000000)+1;
-        
-        reservaT.setId(idRandom);
+        reservaT.setId(idReserva);
         reservaT.setNumeroPersonas(personasReserva);
         reservaT.setPrecioTotal(precioReserva);
         reservaT.setEstado(estadoReserva);
@@ -124,7 +130,7 @@ public class crearReservaAction extends ActionSupport {
         
         reservaT.setIdPaquete(data2);
         Object obj_paquete = reservaT;
-        reservaDAO.create_XML(obj_paquete);
+        reservaDAO.edit_XML(obj_paquete, String.valueOf(idReserva));
         
         // creo la nueva lista de paquetes ya con el nuevo paquete incorporado y la paso a la vista
         

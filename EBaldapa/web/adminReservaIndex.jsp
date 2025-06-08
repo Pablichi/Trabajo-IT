@@ -30,6 +30,12 @@
                             <s:property value="#reserva.id" />
                         </s:a>
                     </td>
+                    
+                    <td>
+                        <s:a action="editarReservaForm">
+                            <s:param name="idReserva" value="%{#reserva.id}" />Editar reserva
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>
