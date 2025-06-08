@@ -30,6 +30,12 @@
                             <s:property value="#pago.metodoPago" />
                         </s:a>
                     </td>
+                    
+                    <td>
+                        <s:a action="editarPagoForm">
+                            <s:param name="idPago" value="%{#pago.id}" />Editar pago
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>

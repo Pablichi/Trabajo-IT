@@ -168,6 +168,15 @@
             <result name="success">/pagos.jsp</result>
         </action>
         
+        <action name="editarPagoForm" class="Controller.detallePagoAction">
+            <result name="success">/editarPago.jsp</result>
+        </action>
+        
+        <action name="editarPago" class="Controller.editarPagoAction">
+            <result name="success">/pagos.jsp</result>
+            <result name="input">/editarPago.jsp</result>
+        </action>
+        
         <!-- Reservas -->
         <action name="listarReservas" class="Controller.listarReservasAction">
             <result name="success">/adminReservaIndex.jsp</result>
