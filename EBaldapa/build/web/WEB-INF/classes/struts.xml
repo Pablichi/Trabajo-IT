@@ -183,6 +183,15 @@
             <result name="success">/clientes.jsp</result>
             <result name="input">/crearCliente.jsp</result>
         </action>
+        
+        <action name="editarClienteForm" class="Controller.detalleClienteAction">
+            <result name="success">/editarCliente.jsp</result>
+        </action>
+        
+        <action name="editarCliente" class="Controller.editarClienteAction">
+            <result name="success">/clientes.jsp</result>
+            <result name="input">/editarCliente.jsp</result>
+        </action>
 
     </package>
 

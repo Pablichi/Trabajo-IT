@@ -37,6 +37,12 @@
                             <s:property value="#cliente.nombre" />
                         </s:a>
                     </td>
+                    
+                    <td>
+                        <s:a action="editarClienteForm">
+                            <s:param name="idCliente" value="%{#cliente.id}" />Editar cliente
+                        </s:a>
+                    </td>
                 </tr>
             </s:iterator>
         </table>
